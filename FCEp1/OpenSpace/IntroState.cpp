@@ -10,10 +10,47 @@ void IntroState::InitState() {
 	FutureApp::m_Inst->SLib->playSound(boot);
 
 	m_Draw = new SmartDraw;
-	m_Title = new Texture2D("content/images/titles/title.jpg");
+	m_Images.push_back(new Texture2D("content/images/titles/starsignal.png"));
+
+	m_Images.push_back(new Texture2D("content/images/titles/title.jpg"));
+	m_Images.push_back(new Texture2D("content/images/titles/fight1.png"));
+	m_Images.push_back(new Texture2D("content/images/titles/land1.png"));
+	m_Images.push_back(new Texture2D("content/images/titles/land2.png"));
+	m_Images.push_back(new Texture2D("content/images/titles/utopia1.png"));
+
 }
 
 void IntroState::UpdateState(float dt) {
+
+	if (state==0) {
+		m_Alpha += (1.0f - m_Alpha) * dt;
+		if (m_Alpha > 0.98)
+		{
+			state = 1;
+			time = clock() + 2000;
+		}
+	}
+	else if (state == 1) {
+
+		if (clock() > time) {
+			state = 3;
+		}
+
+	}
+	else if (state == 3) {
+
+		m_Alpha += (0.0f - m_Alpha) * dt;
+		if (m_Alpha < 0.03)
+		{
+			state = 0;
+			m_CurrentImg++;
+			if (m_CurrentImg >= m_Images.size())
+			{
+				m_CurrentImg = 0;
+			}
+		}
+
+	}
 
 }
 
@@ -28,8 +65,9 @@ void IntroState::RenderState() {
 	//m_Draw->Draw(glm::vec2(mx, my), glm::vec2(mx * 2, my * 2),glm::vec4(1,1,1,1), m_Title,0,1);
 //	m_Draw->End();
 	UIHelp::Begin();
-	UIHelp::DrawImage(glm::vec2(mx, my), glm::vec2(mx * 2, my * 2), m_Title, glm::vec4(1, 1, 1, 1), 0, 1.0f);
+	UIHelp::DrawImage(glm::vec2(mx, my), glm::vec2(mx * 2, my * 2), m_Images[m_CurrentImg], glm::vec4(1, 1, 1, m_Alpha), 0, 1.0f);
 	UIHelp::End();
+
 
 }
 

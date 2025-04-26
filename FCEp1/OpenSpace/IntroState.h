@@ -1,5 +1,6 @@
 #pragma once
 #include "FutureState.h"
+#include <vector>
 
 class SmartDraw;
 class Texture2D;
@@ -18,7 +19,11 @@ public:
 private:
 
 	SmartDraw* m_Draw;
-	Texture2D* m_Title;
+	std::vector<Texture2D*> m_Images;
+	int m_CurrentImg = 0;
+	float m_Alpha = 0.0f;
+	int state = 0;
+	int time = 0;
 
 };
 
