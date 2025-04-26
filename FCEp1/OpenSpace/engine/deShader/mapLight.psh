@@ -1,0 +1,149 @@
+Texture2D    g_Texture;
+SamplerState g_Texture_sampler; // By convention, texture samplers must use the '_sampler' suffix
+Texture2D    g_TextureNorm;
+SamplerState g_TextureNorm_sampler; // By convention, texture samplers must use the '_sampler' suffix
+Texture2D    g_ShadowMap;
+SamplerState g_ShadowMap_sampler; // Shadow map sampler
+
+
+struct PSInput
+{
+    float4 Pos      : SV_POSITION;  // Transformed position, mandatory
+    float2 UV       : TEXCOORD0;    // Texture coordinates
+    float4 Color    : COLOR0;       // Vertex color
+    float3 RealPos  : TEXCOORD1;    // World position or some custom 3D value
+    float4 Extra    : TEXCOORD2;    // Custom data (e.g. lighting, effects, etc.)
+    float4 View     : TEXCOORD3;    // View vector or any custom value
+    float2 ScreenSize : TEXCOORD4;
+    float3 LightPos : TEXCOORD5;
+    float3 LightActual : TEXCOORD6;
+    float LightRange : TEXCOORD7;
+    float CamRot : TEXCOORD8;
+    float CamZoom : TEXCOORD9;
+    float3 LightDiffuse : TEXCOORD10;
+    float2 MapSize : TEXCOORD11;
+    float TopY : TEXCOORD12;
+};
+
+struct PSOutput
+{
+    float4 Color : SV_TARGET;
+};
+
+
+float2 rotate2D(float2 p, float angleDegrees)
+{
+    float angle = radians(angleDegrees);
+    float s = sin(angle);
+    float c = cos(angle);
+    return mul(float2x2(c, s, -s, c), p);
+}
+
+// Shadow calculation with fixed iteration count
+float getShadow(float2 start, float2 end,float2 mapSize)
+{
+    float2 dir = end - start;
+    float dist = length(dir);
+    
+    // Early return if distance is negligible
+    if (dist < 0.001) return 1.0;
+    
+    // Normalize direction and calculate step count
+    float2 stepDir = dir / dist;
+    float stepSize = 12.0;
+    int steps = int(dist / stepSize);
+    
+    // Use normalized coordinates directly
+    float2 uvScale = float2(1.0 / mapSize.x, -1.0 / mapSize.y);
+    float2 uvOffset = float2(0.0, 1.0);
+    
+    // Skip first position (start)
+    float2 pos = start + stepDir * stepSize;
+    
+    // Unroll small loops if your hardware supports it
+    [loop]
+    for (int i = 0; i < steps; ++i)
+    {
+        float2 sUV = pos * uvScale + uvOffset;
+
+        sUV.y = 1.0-sUV.y;
+        if (g_ShadowMap.Sample(g_ShadowMap_sampler, sUV).r < 0.1)
+            return 0.0;
+        
+        pos += stepDir * stepSize;
+    }
+    
+    return 1.0;
+}
+
+// Note that if separate shader objects are not supported (this is only the case for old GLES3.0 devices), vertex
+// shader output variable name must match exactly the name of the pixel shader input variable.
+// If the variable has structure type (like in this example), the structure declarations must also be identical.
+void main(in  PSInput  PSIn,
+          out PSOutput PSOut)
+{
+    float2 spos = PSIn.Pos.xy;
+
+    if(spos.x<PSIn.View.x || spos.x>PSIn.View.x+PSIn.View.z || spos.y<PSIn.View.y || spos.y>PSIn.View.y+PSIn.View.w)
+    {
+        clip(-1);
+        // Initialize PSOut before early exit
+        PSOut.Color = float4(0, 0, 0, 0);
+        return;
+    }
+
+    float2 fragPos = spos;
+    //fragPos.y =  PSIn.ScreenSize.y - fragPos.y;
+
+    float2 delta = PSIn.LightPos.xy - fragPos;
+    //float dis = dot(delta, delta); // Faster than sqrt()
+    
+    //if (dis > feLightRange * feLightRange) {
+    //   discard;
+    //   return;
+    //}
+
+    float dis = sqrt(delta.x*delta.x+delta.y*delta.y);
+
+    float light = dis / PSIn.LightRange;
+  
+    if(light>1.0){
+        light = 1.0;
+    }
+
+    light = 1 - light;
+
+    float3 norm = g_TextureNorm.Sample(g_TextureNorm_sampler, PSIn.UV).rgb * 2.0 - 1.0;
+  //  norm.y = -norm.y; // Flip Y-axis
+    
+    float3 lp = PSIn.LightPos;
+
+    lp.z *= PSIn.CamZoom;
+
+    float3 light_Dir = normalize(lp - float3(fragPos, 0));
+    norm.xy = rotate2D(norm.xy, PSIn.CamRot);
+
+    float diffuse = max(dot(norm, light_Dir), 0.0);
+
+    light = light * diffuse;
+    
+    // Calculate shadow (optional usage)
+     float shadow = getShadow(PSIn.RealPos.xy, PSIn.LightActual.xy, PSIn.MapSize);
+     
+
+       if (PSIn.Extra.y < 0.1) {
+       
+       shadow = 1.0;
+       
+       };
+    if (PSIn.Extra.z <= 0.1) {
+        light = 1.0;
+        diffuse = 1.0;
+    }
+light *= shadow;
+
+
+    float4 Color = g_Texture.Sample(g_Texture_sampler, PSIn.UV) * PSIn.Color * light;
+    
+    PSOut.Color = Color;
+}

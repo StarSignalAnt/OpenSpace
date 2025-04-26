@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4a696ec7-a942-47c5-aa0a-fe0105009827}</ProjectGuid>
+    <RootNamespace>FutureEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_DEVELOPMENT;DILIGENT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <EnableModules>true</EnableModules>
+      <AdditionalIncludeDirectories>C:\project\FCEp1\glfw\include;C:\git\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;C:\git\DiligentEngine\DiligentCore\Common\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\project\FCEp1\FutureEngine\llama;C:\project\FCEp1\FutureEngine\llama\ggml-cpu;C:\project\FCEp1\openal\include;C:\project\FCEp1\ffmpeg\include;C:\project\FCEp1\FreeType\include;C:\project\FCEp1\FutureEngine\include;C:\git\DiligentEngine\DiligentTools\TextureLoader\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BuildStlModules>true</BuildStlModules>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>openal32.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;postproc.lib;freetype.lib;glfw3dll.lib;Archiver_64d.lib;Diligent-BasicPlatform.lib;Diligent-Common.lib;DiligentCore.lib;DiligentFX.lib;Diligent-GraphicsAccessories.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsEngineD3D11-static.lib;Diligent-GraphicsEngineD3D12-static.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsTools.lib;Diligent-HLSL2GLSLConverterLib.lib;Diligent-NativeAppBase.lib;Diligent-Primitives.lib;Diligent-ShaderTools.lib;Diligent-TextureLoader.lib;DiligentTools.lib;Diligent-Win32Platform.lib;GenericCodeGend.lib;GraphicsEngineD3D12_64d.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;MachineIndependentd.lib;OSDependentd.lib;xxhash.lib;ZLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\project\FCEp1\glfw;C:\project\FCEp1\de\debug;C:\project\FCEp1\llm\llama.cpp\build\src\Release;C:\project\FCEp1\openal\libs\Win64;C:\project\FCEp1\ffmpeg\lib;C:\project\FCEp1\FreeType;C:\project\FCEp1\FutureEngine\packages\glfw.3.4.0\build\native\lib\static\v143\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);WIN32;_WINDOWS;USE_D3D12_LOADER=1;D3D12_H_HAS_MESH_SHADER=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_SPIRV_CROSS_NAMESPACE=diligent_spirv_cross;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\git\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;C:\git\DiligentEngine\DiligentCore\Common\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\project\FCEp1\FutureEngine\llama;C:\project\FCEp1\FutureEngine\llama\ggml-cpu;C:\project\FCEp1\openal\include;C:\project\FCEp1\ffmpeg\include;C:\project\FCEp1\FreeType\include;C:\project\FCEp1\FutureEngine\include;C:\git\DiligentEngine\DiligentTools\TextureLoader\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <EnableModules>true</EnableModules>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>openal32.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;postproc.lib;freetype.lib;glfw3dll.lib;llama.lib;Archiver_64r.lib;Diligent-BasicPlatform.lib;Diligent-Common.lib;DiligentCore.lib;DiligentFX.lib;Diligent-GraphicsAccessories.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsEngineD3D11-static.lib;Diligent-GraphicsEngineD3D12-static.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsTools.lib;Diligent-HLSL2GLSLConverterLib.lib;Diligent-NativeAppBase.lib;Diligent-Primitives.lib;Diligent-ShaderTools.lib;Diligent-TextureLoader.lib;DiligentTools.lib;Diligent-Win32Platform.lib;GenericCodeGen.lib;GraphicsEngineD3D12_64r.lib;LibJpeg.lib;libpng16_static.lib;LibTiff.lib;MachineIndependent.lib;OSDependent.lib;xxhash.lib;ZLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\project\FCEp1\glfw;C:\project\FCEp1\de\release;C:\project\FCEp1\llm\llama.cpp\build\src\Release;C:\project\FCEp1\openal\libs\Win64;C:\project\FCEp1\ffmpeg\lib;C:\project\FCEp1\FreeType;C:\project\FCEp1\FutureEngine\packages\glfw.3.4.0\build\native\lib\static\v143\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawInfo.h" />
+    <ClInclude Include="DrawList.h" />
+    <ClInclude Include="FileRequester.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="FutureApp.h" />
+    <ClInclude Include="FutureState.h" />
+    <ClInclude Include="GameAnimation.h" />
+    <ClInclude Include="GameCam.h" />
+    <ClInclude Include="GameFont.h" />
+    <ClInclude Include="GameInput.h" />
+    <ClInclude Include="GameLight.h" />
+    <ClInclude Include="GameMap.h" />
+    <ClInclude Include="GameObj.h" />
+    <ClInclude Include="GameSprite.h" />
+    <ClInclude Include="GameTile.h" />
+    <ClInclude Include="GameUI.h" />
+    <ClInclude Include="GameVideo.h" />
+    <ClInclude Include="GPMap2D.h" />
+    <ClInclude Include="GPSmartDraw.h" />
+    <ClInclude Include="GraphicsPipeline.h" />
+    <ClInclude Include="IButton.h" />
+    <ClInclude Include="ICheckBox.h" />
+    <ClInclude Include="IComboBox.h" />
+    <ClInclude Include="IControl.h" />
+    <ClInclude Include="IControlGroup.h" />
+    <ClInclude Include="IDateSelector.h" />
+    <ClInclude Include="IDocker.h" />
+    <ClInclude Include="IFrameBuffer.h" />
+    <ClInclude Include="IGetName.h" />
+    <ClInclude Include="IHorizontalScroller.h" />
+    <ClInclude Include="IImage.h" />
+    <ClInclude Include="ILabel.h" />
+    <ClInclude Include="IMainMenu.h" />
+    <ClInclude Include="IPropertyEditor.h" />
+    <ClInclude Include="ISizeBox.h" />
+    <ClInclude Include="ITextArea.h" />
+    <ClInclude Include="ITextEdit.h" />
+    <ClInclude Include="ITimeSelector.h" />
+    <ClInclude Include="IToolBar.h" />
+    <ClInclude Include="ITreeNode.h" />
+    <ClInclude Include="ITreeView.h" />
+    <ClInclude Include="IVerticalMenu.h" />
+    <ClInclude Include="IVerticalScroller.h" />
+    <ClInclude Include="IVideoPlayer.h" />
+    <ClInclude Include="IWindow.h" />
+    <ClInclude Include="llama\ggml.h" />
+    <ClInclude Include="llama\llama-cpp.h" />
+    <ClInclude Include="llama\llama.h" />
+    <ClInclude Include="MathsOps.h" />
+    <ClInclude Include="MeshBuffer.h" />
+    <ClInclude Include="MessageBox.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RenderTarget2D.h" />
+    <ClInclude Include="ShaderModule.h" />
+    <ClInclude Include="SmartDraw.h" />
+    <ClInclude Include="SoundLib.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="ThemeDark.h" />
+    <ClInclude Include="UIHelp.h" />
+    <ClInclude Include="UITheme.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawInfo.cpp" />
+    <ClCompile Include="DrawList.cpp" />
+    <ClCompile Include="FileRequester.cpp" />
+    <ClCompile Include="FutureApp.cpp" />
+    <ClCompile Include="FutureEngine.cpp" />
+    <ClCompile Include="FutureState.cpp" />
+    <ClCompile Include="GameAnimation.cpp" />
+    <ClCompile Include="GameCam.cpp" />
+    <ClCompile Include="GameFont.cpp" />
+    <ClCompile Include="GameInput.cpp" />
+    <ClCompile Include="GameLight.cpp" />
+    <ClCompile Include="GameMap.cpp" />
+    <ClCompile Include="GameObj.cpp" />
+    <ClCompile Include="GameSprite.cpp" />
+    <ClCompile Include="GameTile.cpp" />
+    <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="GameVideo.cpp" />
+    <ClCompile Include="GPMap2D.cpp" />
+    <ClCompile Include="GPSmartDraw.cpp" />
+    <ClCompile Include="GraphicsPipeline.cpp" />
+    <ClCompile Include="IButton.cpp" />
+    <ClCompile Include="ICheckBox.cpp" />
+    <ClCompile Include="IComboBox.cpp" />
+    <ClCompile Include="IControl.cpp" />
+    <ClCompile Include="IControlGroup.cpp" />
+    <ClCompile Include="IDateSelector.cpp" />
+    <ClCompile Include="IDocker.cpp" />
+    <ClCompile Include="IFrameBuffer.cpp" />
+    <ClCompile Include="IGetName.cpp" />
+    <ClCompile Include="IHorizontalScroller.cpp" />
+    <ClCompile Include="IImage.cpp" />
+    <ClCompile Include="ILabel.cpp" />
+    <ClCompile Include="IMainMenu.cpp" />
+    <ClCompile Include="IPropertyEditor.cpp" />
+    <ClCompile Include="ITextArea.cpp" />
+    <ClCompile Include="ITextEdit.cpp" />
+    <ClCompile Include="ITimeSelector.cpp" />
+    <ClCompile Include="IToolBar.cpp" />
+    <ClCompile Include="ITreeNode.cpp" />
+    <ClCompile Include="ITreeView.cpp" />
+    <ClCompile Include="IVerticalMenu.cpp" />
+    <ClCompile Include="IVerticalScroller.cpp" />
+    <ClCompile Include="IVideoPlayer.cpp" />
+    <ClCompile Include="IWindow.cpp" />
+    <ClCompile Include="MathsOps.cpp" />
+    <ClCompile Include="MeshBuffer.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderTarget2D.cpp" />
+    <ClCompile Include="ShaderModule.cpp" />
+    <ClCompile Include="SmartDraw.cpp" />
+    <ClCompile Include="SoundLib.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="ThemeDark.cpp" />
+    <ClCompile Include="UIHelp.cpp" />
+    <ClCompile Include="UITheme.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\glfw.3.4.0\build\native\glfw.targets" Condition="Exists('packages\glfw.3.4.0\build\native\glfw.targets')" />
+    <Import Project="packages\glm.1.0.1\build\native\glm.targets" Condition="Exists('packages\glm.1.0.1\build\native\glm.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\glfw.3.4.0\build\native\glfw.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\glfw.3.4.0\build\native\glfw.targets'))" />
+    <Error Condition="!Exists('packages\glm.1.0.1\build\native\glm.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\glm.1.0.1\build\native\glm.targets'))" />
+  </Target>
+</Project>

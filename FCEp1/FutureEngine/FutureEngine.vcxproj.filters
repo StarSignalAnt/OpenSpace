@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{7005cfea-506a-40c9-9c8e-b9af846db64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maths">
+      <UniqueIdentifier>{85a89d06-4cb9-4b24-98ba-37adfddc83c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{4690645d-7251-4381-b637-dbaa827243fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{04029a0e-4055-4b8d-b1b4-c1982e266291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{3262bcc5-17a8-48cd-b545-9bcafa204444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{a2d77829-f807-44af-9dcd-5521780c35a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{a57c301a-0917-41a4-80c8-9ce54344c365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderTarget">
+      <UniqueIdentifier>{f4c15526-3ebf-40a2-8943-799ba76cb2d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resonance2">
+      <UniqueIdentifier>{f0f2c846-fd98-4039-a406-0f748c1305f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resonance2\Controls">
+      <UniqueIdentifier>{3ffb9d04-a759-4534-8796-e9f7faada572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font">
+      <UniqueIdentifier>{3bfa8c43-68cb-4d71-9f20-3ed23eec603f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Videon">
+      <UniqueIdentifier>{cb4b0934-e01f-4c04-a2a2-0f6d7994ea6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{1ac8170b-54f7-4b5f-a83c-d67c0dd44fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{d8ca10bd-02db-4871-898a-85c072a3eb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resonance2\Themes">
+      <UniqueIdentifier>{b8c86d21-779f-487e-9a0f-e9ea7e1847a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GenAI">
+      <UniqueIdentifier>{4da56e41-27d1-4727-9ada-7fea053ee927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{546ef218-6cb3-411d-be20-6b7b17218c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GP">
+      <UniqueIdentifier>{3088ba87-011a-4414-a04d-582297fe0c82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FutureApp.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="MathsOps.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="FutureState.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartDraw.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawList.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawInfo.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderModule.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMap.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTile.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCam.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLight.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget2D.h">
+      <Filter>RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSprite.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAnimation.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>Resonance2</Filter>
+    </ClInclude>
+    <ClInclude Include="IControl.h">
+      <Filter>Resonance2</Filter>
+    </ClInclude>
+    <ClInclude Include="IImage.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IControlGroup.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="UIHelp.h">
+      <Filter>Resonance2</Filter>
+    </ClInclude>
+    <ClInclude Include="IButton.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFont.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IVerticalScroller.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IHorizontalScroller.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IVideoPlayer.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IFrameBuffer.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IDocker.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IMainMenu.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IVerticalMenu.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRequester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextEdit.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IComboBox.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ITreeView.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ITreeNode.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IDateSelector.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ITimeSelector.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="GameVideo.h">
+      <Filter>Videon</Filter>
+    </ClInclude>
+    <ClInclude Include="ILabel.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ISizeBox.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundLib.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBox.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="UITheme.h">
+      <Filter>Resonance2</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeDark.h">
+      <Filter>Resonance2\Themes</Filter>
+    </ClInclude>
+    <ClInclude Include="IToolBar.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="llama\ggml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="llama\llama.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="llama\llama-cpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextArea.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IGetName.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IPropertyEditor.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ICheckBox.h">
+      <Filter>Resonance2\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshBuffer.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsPipeline.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="GPSmartDraw.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="GPMap2D.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FutureEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FutureApp.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathsOps.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="FutureState.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartDraw.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawList.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawInfo.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderModule.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMap.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTile.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCam.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLight.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget2D.cpp">
+      <Filter>RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSprite.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAnimation.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>Resonance2</Filter>
+    </ClCompile>
+    <ClCompile Include="IControl.cpp">
+      <Filter>Resonance2</Filter>
+    </ClCompile>
+    <ClCompile Include="IImage.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IControlGroup.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="UIHelp.cpp">
+      <Filter>Resonance2</Filter>
+    </ClCompile>
+    <ClCompile Include="IButton.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="GameFont.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindow.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IVerticalScroller.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IHorizontalScroller.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IVideoPlayer.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IFrameBuffer.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IDocker.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IMainMenu.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IVerticalMenu.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="FileRequester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ITextEdit.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IComboBox.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ITreeView.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ITreeNode.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IDateSelector.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ITimeSelector.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="GameVideo.cpp">
+      <Filter>Videon</Filter>
+    </ClCompile>
+    <ClCompile Include="ILabel.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundLib.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="UITheme.cpp">
+      <Filter>Resonance2</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeDark.cpp">
+      <Filter>Resonance2\Themes</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBox.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IToolBar.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ITextArea.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IGetName.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IPropertyEditor.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ICheckBox.cpp">
+      <Filter>Resonance2\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshBuffer.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsPipeline.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="GPSmartDraw.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="GPMap2D.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

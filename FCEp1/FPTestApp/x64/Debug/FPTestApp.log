@@ -1,0 +1,6 @@
+﻿  dllmain.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1399,5): warning MSB8012: TargetPath(C:\project\FCEp1\FutureEngine\x64\Debug\FPTestApp.dll) does not match the Linker's OutputFile property value (C:\project\FCEp1\FutureEd\apps\testApp\testApp.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1401,5): warning MSB8012: TargetName(FPTestApp) does not match the Linker's OutputFile property value (testApp). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  LINK : C:\project\FCEp1\FutureEd\apps\testApp\testApp.dll not found or not built by the last incremental link; performing full link
+     Creating library C:\project\FCEp1\FutureEngine\x64\Debug\FPTestApp.lib and object C:\project\FCEp1\FutureEngine\x64\Debug\FPTestApp.exp
+  FPTestApp.vcxproj -> C:\project\FCEp1\FutureEngine\x64\Debug\FPTestApp.dll
