@@ -4,10 +4,10 @@
 #include "SmartDraw.h"
 #include "Texture2D.h"
 #include "UIHelp.h"
+#include "GameInput.h"
+#include "MenuState.h"
 
 void IntroState::InitState() {
-	auto boot = FutureApp::m_Inst->SLib->loadSound("content/music/theme.wav");
-	FutureApp::m_Inst->SLib->playSound(boot);
 
 	m_Draw = new SmartDraw;
 	m_Images.push_back(new Texture2D("content/images/titles/starsignal.png"));
@@ -17,6 +17,9 @@ void IntroState::InitState() {
 	m_Images.push_back(new Texture2D("content/images/titles/land1.png"));
 	m_Images.push_back(new Texture2D("content/images/titles/land2.png"));
 	m_Images.push_back(new Texture2D("content/images/titles/utopia1.png"));
+	auto boot = FutureApp::m_Inst->SLib->loadSound("content/music/theme.wav");
+	m_Music = FutureApp::m_Inst->SLib->playSound(boot);
+
 
 }
 
@@ -49,6 +52,24 @@ void IntroState::UpdateState(float dt) {
 				m_CurrentImg = 0;
 			}
 		}
+
+	}
+
+
+	for (int i = 0;i < 256;i++) {
+		if (GameInput::Keys[i]) {
+
+			//SoundLIB::stopAllSounds();
+			m_Music->stop();
+			FutureApp::m_Inst->PushState(new MenuState);
+		}
+	}
+
+	if (GameInput::Buttons[0]) {
+
+		
+		m_Music->stop();
+		FutureApp::m_Inst->PushState(new MenuState);
 
 	}
 

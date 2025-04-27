@@ -1,7 +1,10 @@
 #pragma once
 #include "FutureState.h"
 #include <vector>
-
+#include <algorithm>
+#include <unordered_map>
+#include <memory>
+#include "SoundLib.h"
 class SmartDraw;
 class Texture2D;
 
@@ -24,6 +27,7 @@ private:
 	float m_Alpha = 0.0f;
 	int state = 0;
 	int time = 0;
+	std::shared_ptr<Channel> m_Music;
 
 };
 

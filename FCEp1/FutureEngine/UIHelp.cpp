@@ -60,6 +60,20 @@ void UIHelp::DrawImage(glm::vec2 position, glm::vec2 size, Texture2D* texture, g
 
 }
 
+
+void UIHelp::DrawImage(glm::vec2 position, glm::vec2 size, Texture2D* texture, glm::vec4 color,float rot,float scale)
+{
+	//	glEnable(GL_BLEND);
+	//	glClear(GL_DEPTH_BUFFER_BIT);
+	//	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		//m_Draw->Begin();
+	auto inf = m_Draw->Draw(position, size, color, texture,rot,scale);
+	inf->SetView(m_Scissor);
+
+	//	m_Draw->End();
+
+}
+
 float UIHelp::StrWidth(std::string text,float scale) {
 
 	return m_UIFont->StrWidth(text,scale);

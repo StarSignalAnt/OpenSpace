@@ -131,12 +131,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="IntroState.cpp" />
+    <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="OpenSpace.cpp" />
     <ClCompile Include="OpenSpaceGame.cpp" />
+    <ClCompile Include="Starfield.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntroState.h" />
+    <ClInclude Include="MenuState.h" />
     <ClInclude Include="OpenSpaceGame.h" />
+    <ClInclude Include="Starfield.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

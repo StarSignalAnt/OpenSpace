@@ -55,7 +55,8 @@ void GPSmartDraw::CreatePL() {
 
     // Blend operations
     //PSOCreateInfo.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendOp = BLEND_OPERATION_ADD;
-   // PSOCreateInfo.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendOpAlpha = BLEND_OPERATION_ADD;
+    //PSOCreateInfo.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendOpAlpha = BLEND_OPERATION_ADD;
+
 
 
     // Specify which color channels to write (typically all for alpha blending)

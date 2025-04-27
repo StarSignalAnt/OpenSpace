@@ -24,12 +24,24 @@
     <ClCompile Include="IntroState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Starfield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenSpaceGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IntroState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Starfield.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -35,9 +35,10 @@ public:
 			m_ActiveMenu = menu;
 		}
 	}
-	void AddWindow(IWindow* window) {
-		m_Windows.push_back(window);
-	}
+	void AddWindow(IWindow* window);// {
+		//m_Windows.push_back(window);
+	//	m_WindowSurface->AddChild(window);
+//	}
 	void SetWindowSurface(IControl* surface) {
 		m_WindowSurface = surface;
 	}

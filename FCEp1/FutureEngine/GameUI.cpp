@@ -32,6 +32,7 @@ GameUI::GameUI()
     m_RootControl->Set(glm::vec2(0,0), glm::vec2(FutureApp::m_Inst->GetWidth(), FutureApp::m_Inst->GetHeight()));
    // m_ActiveMenu = new IMainMenu;
     m_Theme = new ThemeDark;
+    SetWindowSurface(m_RootControl);
 
 
 }
@@ -512,6 +513,7 @@ void GameUI::SetDragWindow(IWindow* window) {
 
 void GameUI::SetMainMenu(IMainMenu* menu)
 {
+    if (menu == nullptr) return;
     if (m_ActiveMenu != nullptr) {
         m_RootControl->RemoveChild(m_ActiveMenu);
     }
@@ -538,4 +540,9 @@ void GameUI::ClearMenus() {
     m_ActiveMenu->ClearChildren();
     
 
+}
+
+void GameUI::AddWindow(IWindow* window) {
+    m_Windows.push_back(window);
+    m_WindowSurface->AddChild(window);
 }
