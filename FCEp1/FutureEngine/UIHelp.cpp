@@ -18,7 +18,7 @@ glm::vec4 UIHelp::m_Scissor;
 void UIHelp::InitHelp() {
 
 	m_Draw = new SmartDraw;
-	m_UIFont = new GameFont("engine/ui/uifont.ttf",14);
+	m_UIFont = new GameFont("engine/ui/uifont.ttf",16);
 	m_FontDraw = new SmartDraw;
 	m_BlurDraw = new SmartDraw;
 

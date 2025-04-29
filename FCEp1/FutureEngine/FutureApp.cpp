@@ -287,7 +287,7 @@ int FutureApp::Run()
         pContext->SetRenderTargets(1, &pRTV, dsv, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
         // Clear with linear RGB values (not sRGB)
-        const float ClearColor[4] = { 0.0f, 0.0f, 0.0f, 1.0f }; // Pure red in linear space
+        const float ClearColor[4] = { 0.5f, 0.0f, 0.0f, 1.0f }; // Pure red in linear space
         pContext->ClearRenderTarget(pRTV, ClearColor, RESOURCE_STATE_TRANSITION_MODE_VERIFY);
         pContext->ClearDepthStencil(dsv, CLEAR_DEPTH_FLAG | CLEAR_STENCIL_FLAG, 1.0f, 0, RESOURCE_STATE_TRANSITION_MODE_VERIFY);
 

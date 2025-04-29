@@ -43,10 +43,28 @@ void IWindow::Render()
 	auto bg = theme->GetBackground();
 	bg.a = theme->GetWindowAlpha();
 
-	UIHelp::DrawRect(pos + glm::vec2(0, 20), m_Size + glm::vec2(0, -17), theme->GetWindowDark());
-	UIHelp::DrawRect(pos + glm::vec2(3, 20), m_Size + glm::vec2(-6, -21), theme->GetWindowLight());
-	 UIHelp::DrawRect(pos + glm::vec2(0,0),  glm::vec2(m_Size.x, 20), theme->GetWindowTileBar());
-//	UIHelp::DrawRect(pos, glm::vec2(m_Size.x, 20), glm::vec4(1,1,1, 1.0f));
+
+	if (theme->IsGame()) {
+
+		UIHelp::DrawRect(pos + glm::vec2(0, 20), m_Size + glm::vec2(0, -17), theme->GetWindowDark());
+		UIHelp::DrawRect(pos + glm::vec2(3, 20), m_Size + glm::vec2(-6, -21), theme->GetWindowLight());
+		UIHelp::DrawRect(pos + glm::vec2(0, 0), glm::vec2(m_Size.x, 20), theme->GetWindowTileBar());
+
+		int tx = (m_Size.x / 2) - UIHelp::StrWidth(m_Text) / 2;
+		int ty = 5;
+
+		UIHelp::DrawText(GetRenderPosition()+glm::vec2(tx, ty), m_Text, glm::vec4(1, 1, 1, 1));
+		RenderChildren();
+
+		return;
+	}
+	else {
+		UIHelp::DrawRect(pos + glm::vec2(0, 20), m_Size + glm::vec2(0, -17), theme->GetWindowDark());
+		UIHelp::DrawRect(pos + glm::vec2(3, 20), m_Size + glm::vec2(-6, -21), theme->GetWindowLight());
+		UIHelp::DrawRect(pos + glm::vec2(0, 0), glm::vec2(m_Size.x, 20), theme->GetWindowTileBar());
+	}
+	 //	UIHelp::DrawRect(pos, glm::vec2(m_Size.x, 20), glm::vec4(1,1,1, 1.0f));
+// 
 // 
 // 
 // 

@@ -135,12 +135,14 @@
     <ClCompile Include="OpenSpace.cpp" />
     <ClCompile Include="OpenSpaceGame.cpp" />
     <ClCompile Include="Starfield.cpp" />
+    <ClCompile Include="Test3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntroState.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="OpenSpaceGame.h" />
     <ClInclude Include="Starfield.h" />
+    <ClInclude Include="Test3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

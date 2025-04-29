@@ -7,6 +7,7 @@
 #include "IWindow.h"
 #include "IMainMenu.h"
 #include "ThemeDark.h"
+#include "ThemeBlueGame.h"
 #include <iostream>
 #include "UIHelp.h"
 
@@ -31,7 +32,7 @@ GameUI::GameUI()
     m_RootControl = new IControlGroup;
     m_RootControl->Set(glm::vec2(0,0), glm::vec2(FutureApp::m_Inst->GetWidth(), FutureApp::m_Inst->GetHeight()));
    // m_ActiveMenu = new IMainMenu;
-    m_Theme = new ThemeDark;
+    m_Theme = new ThemeBlueGame;
     SetWindowSurface(m_RootControl);
 
 

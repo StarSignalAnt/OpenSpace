@@ -115,7 +115,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdclatest</LanguageStandard_C>
       <EnableModules>true</EnableModules>
-      <AdditionalIncludeDirectories>C:\project\FCEp1\glfw\include;C:\git\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;C:\git\DiligentEngine\DiligentCore\Common\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\project\FCEp1\FutureEngine\llama;C:\project\FCEp1\FutureEngine\llama\ggml-cpu;C:\project\FCEp1\openal\include;C:\project\FCEp1\ffmpeg\include;C:\project\FCEp1\FreeType\include;C:\project\FCEp1\FutureEngine\include;C:\git\DiligentEngine\DiligentTools\TextureLoader\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\git\assimp\include;C:\project\FCEp1\glfw\include;C:\git\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;C:\git\DiligentEngine\DiligentCore\Common\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\project\FCEp1\FutureEngine\llama;C:\project\FCEp1\FutureEngine\llama\ggml-cpu;C:\project\FCEp1\openal\include;C:\project\FCEp1\ffmpeg\include;C:\project\FCEp1\FreeType\include;C:\project\FCEp1\FutureEngine\include;C:\git\DiligentEngine\DiligentTools\TextureLoader\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BuildStlModules>true</BuildStlModules>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -125,10 +125,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>openal32.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;postproc.lib;freetype.lib;glfw3dll.lib;Archiver_64d.lib;Diligent-BasicPlatform.lib;Diligent-Common.lib;DiligentCore.lib;DiligentFX.lib;Diligent-GraphicsAccessories.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsEngineD3D11-static.lib;Diligent-GraphicsEngineD3D12-static.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsTools.lib;Diligent-HLSL2GLSLConverterLib.lib;Diligent-NativeAppBase.lib;Diligent-Primitives.lib;Diligent-ShaderTools.lib;Diligent-TextureLoader.lib;DiligentTools.lib;Diligent-Win32Platform.lib;GenericCodeGend.lib;GraphicsEngineD3D12_64d.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;MachineIndependentd.lib;OSDependentd.lib;xxhash.lib;ZLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>openal32.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;postproc.lib;freetype.lib;glfw3dll.lib;Archiver_64d.lib;Diligent-BasicPlatform.lib;Diligent-Common.lib;DiligentCore.lib;DiligentFX.lib;Diligent-GraphicsAccessories.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsEngineD3D11-static.lib;Diligent-GraphicsEngineD3D12-static.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsTools.lib;Diligent-HLSL2GLSLConverterLib.lib;Diligent-NativeAppBase.lib;Diligent-Primitives.lib;Diligent-ShaderTools.lib;Diligent-TextureLoader.lib;DiligentTools.lib;Diligent-Win32Platform.lib;GenericCodeGend.lib;GraphicsEngineD3D12_64d.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;MachineIndependentd.lib;OSDependentd.lib;xxhash.lib;ZLib.lib;assimp-vc143-mtd.lib;zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>C:\project\FCEp1\glfw;C:\project\FCEp1\de\debug;C:\project\FCEp1\llm\llama.cpp\build\src\Release;C:\project\FCEp1\openal\libs\Win64;C:\project\FCEp1\ffmpeg\lib;C:\project\FCEp1\FreeType;C:\project\FCEp1\FutureEngine\packages\glfw.3.4.0\build\native\lib\static\v143\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\project\FCEp1\de;C:\project\FCEp1\glfw;C:\project\FCEp1\de\debug;C:\project\FCEp1\llm\llama.cpp\build\src\Release;C:\project\FCEp1\openal\libs\Win64;C:\project\FCEp1\ffmpeg\lib;C:\project\FCEp1\FreeType;C:\project\FCEp1\FutureEngine\packages\glfw.3.4.0\build\native\lib\static\v143\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -180,9 +180,12 @@
     <ClInclude Include="GameTile.h" />
     <ClInclude Include="GameUI.h" />
     <ClInclude Include="GameVideo.h" />
+    <ClInclude Include="GP3D.h" />
+    <ClInclude Include="GPBasic3D.h" />
     <ClInclude Include="GPMap2D.h" />
     <ClInclude Include="GPSmartDraw.h" />
     <ClInclude Include="GraphicsPipeline.h" />
+    <ClInclude Include="GraphNode.h" />
     <ClInclude Include="IButton.h" />
     <ClInclude Include="ICheckBox.h" />
     <ClInclude Include="IComboBox.h" />
@@ -196,6 +199,7 @@
     <ClInclude Include="IImage.h" />
     <ClInclude Include="ILabel.h" />
     <ClInclude Include="IMainMenu.h" />
+    <ClInclude Include="Importer.h" />
     <ClInclude Include="IPropertyEditor.h" />
     <ClInclude Include="ISizeBox.h" />
     <ClInclude Include="ITextArea.h" />
@@ -212,14 +216,22 @@
     <ClInclude Include="llama\llama-cpp.h" />
     <ClInclude Include="llama\llama.h" />
     <ClInclude Include="MathsOps.h" />
+    <ClInclude Include="Mesh3DBuffer.h" />
     <ClInclude Include="MeshBuffer.h" />
     <ClInclude Include="MessageBox.h" />
+    <ClInclude Include="NodeCamera.h" />
+    <ClInclude Include="NodeEntity.h" />
+    <ClInclude Include="NodeLight.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="RenderMaterial.h" />
     <ClInclude Include="RenderTarget2D.h" />
+    <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="ShaderModule.h" />
     <ClInclude Include="SmartDraw.h" />
+    <ClInclude Include="SolarisRenderer.h" />
     <ClInclude Include="SoundLib.h" />
     <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="ThemeBlueGame.h" />
     <ClInclude Include="ThemeDark.h" />
     <ClInclude Include="UIHelp.h" />
     <ClInclude Include="UITheme.h" />
@@ -242,9 +254,12 @@
     <ClCompile Include="GameTile.cpp" />
     <ClCompile Include="GameUI.cpp" />
     <ClCompile Include="GameVideo.cpp" />
+    <ClCompile Include="GP3D.cpp" />
+    <ClCompile Include="GPBasic3D.cpp" />
     <ClCompile Include="GPMap2D.cpp" />
     <ClCompile Include="GPSmartDraw.cpp" />
     <ClCompile Include="GraphicsPipeline.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
     <ClCompile Include="IButton.cpp" />
     <ClCompile Include="ICheckBox.cpp" />
     <ClCompile Include="IComboBox.cpp" />
@@ -258,6 +273,7 @@
     <ClCompile Include="IImage.cpp" />
     <ClCompile Include="ILabel.cpp" />
     <ClCompile Include="IMainMenu.cpp" />
+    <ClCompile Include="Importer.cpp" />
     <ClCompile Include="IPropertyEditor.cpp" />
     <ClCompile Include="ITextArea.cpp" />
     <ClCompile Include="ITextEdit.cpp" />
@@ -270,20 +286,28 @@
     <ClCompile Include="IVideoPlayer.cpp" />
     <ClCompile Include="IWindow.cpp" />
     <ClCompile Include="MathsOps.cpp" />
+    <ClCompile Include="Mesh3DBuffer.cpp" />
     <ClCompile Include="MeshBuffer.cpp" />
     <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="NodeCamera.cpp" />
+    <ClCompile Include="NodeEntity.cpp" />
+    <ClCompile Include="NodeLight.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="RenderMaterial.cpp" />
     <ClCompile Include="RenderTarget2D.cpp" />
+    <ClCompile Include="SceneGraph.cpp" />
     <ClCompile Include="ShaderModule.cpp" />
     <ClCompile Include="SmartDraw.cpp" />
+    <ClCompile Include="SolarisRenderer.cpp" />
     <ClCompile Include="SoundLib.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="ThemeBlueGame.cpp" />
     <ClCompile Include="ThemeDark.cpp" />
     <ClCompile Include="UIHelp.cpp" />
     <ClCompile Include="UITheme.cpp" />

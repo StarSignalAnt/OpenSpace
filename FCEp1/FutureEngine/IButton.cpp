@@ -21,8 +21,9 @@ void IButton::Render()
 
 	auto theme = GameUI::GetTheme();
 	if (m_RenderBody || m_Over) {
-		UIHelp::DrawOutlineRect(GetRenderPosition()+glm::vec2(-1,-1), m_Size+glm::vec2(2,-2),theme->GetWindowLight()*3.0f );
-		UIHelp::DrawRect(GetRenderPosition(), m_Size+glm::vec2(0,-3), theme->GetWindowDark() * 2.0f * (m_Color * 10.0f));
+	
+		UIHelp::DrawImage(GetRenderPosition(), m_Size + glm::vec2(-1, -1), theme->GetButton(), theme->GetForeground()*m_Color);// *(m_Color));
+		UIHelp::DrawOutlineRect(GetRenderPosition() + glm::vec2(0, 0), m_Size+glm::vec2(-1,-1), theme->GetWindowLight() * 3.0f);
 
 
 
@@ -40,25 +41,25 @@ void IButton::Render()
 void IButton::LoadResources() {
 
 //	m_Image = new Texture2D("engine/ui/buttonframe.png");
-	m_Color = glm::vec4(0.1,0.1,0.1, 1);
+	m_Color = glm::vec4(0.7,0.7,0.7, 1);
 }
 
 void IButton::OnMouseEnter()
 {
-	m_Color = glm::vec4(0.15,0.15,0.15, 1);
+	m_Color = glm::vec4(0.9,0.9,0.9, 1);
 	m_Over = true;
 }
 
 void IButton::OnMouseLeave()
 {
-	m_Color = glm::vec4(0.1,0.1,0.1, 1);
+	m_Color = glm::vec4(0.7,0.7,0.7, 1);
 	m_Over = false;
 }
 
 
 void IButton::OnMouseDown(int button)
 {
-	m_Color = glm::vec4(0.3,0.3,0.3, 1);
+	m_Color = glm::vec4(1,1,1, 1);
 	m_Dragging = true;
 	Click(m_Data);
 
@@ -67,7 +68,8 @@ void IButton::OnMouseDown(int button)
 void IButton::OnMouseUp(int button)
 {
 	m_Dragging = false;
-	m_Color = glm::vec4(0.15,0.15,0.15, 1);
+	m_Color = glm::vec4(0.9, 0.9, 0.9, 1);
+
 }
 
 void IButton::OnMouseDoubleClick()

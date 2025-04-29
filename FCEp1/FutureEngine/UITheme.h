@@ -20,6 +20,10 @@ public:
 	Texture2D* GetScrollButton() { return m_ScrollButton; };
 	glm::vec4 GetWindowLight() { return m_WindowLight; };
 	glm::vec4 GetWindowDark() { return m_WindowDark; };
+	bool IsGame() {
+		return m_GameTheme;
+	}
+
 protected:
 
 	glm::vec4 m_Background;
@@ -31,7 +35,7 @@ protected:
 	float m_WindowAlpha = 0.95f;
 	Texture2D* m_Button;
 	Texture2D* m_ScrollButton;
-	
+	bool m_GameTheme = false;
 
 
 };

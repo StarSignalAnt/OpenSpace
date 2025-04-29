@@ -1,2 +1,3 @@
-﻿  MenuState.cpp
+﻿  Test3D.cpp
+C:\project\FCEp1\OpenSpace\Test3D.cpp(43,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   OpenSpace.vcxproj -> C:\project\FCEp1\FutureEngine\x64\Debug\OpenSpace.exe
