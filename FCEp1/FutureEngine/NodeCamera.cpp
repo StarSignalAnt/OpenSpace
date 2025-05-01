@@ -19,3 +19,13 @@ glm::mat4 NodeCamera::GetWorldMatrix() {
 	return glm::inverse(GraphNode::GetWorldMatrix());
 
 }
+
+void NodeCamera::SetFOV(float fov)
+{
+	m_FOV = fov;
+}
+
+void NodeCamera::SetFarZ(float z)
+{
+	m_FarZ = z;
+}

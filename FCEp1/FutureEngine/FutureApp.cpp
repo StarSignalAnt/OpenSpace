@@ -7,6 +7,8 @@
 #include "UIHelp.h"
 #include "GameUI.h"
 #include "SoundLib.h"
+#include "RenderTargetCube.h"
+#include "Texture2D.h"
 
 
 #ifndef ENGINE_DLL
@@ -218,6 +220,14 @@ int FutureApp::Run()
 
     int ptime = clock();
 
+    double xpos, ypos;
+    glfwGetCursorPos(window, &xpos, &ypos);
+
+    GameInput::MousePosition = glm::vec2(xpos, ypos);
+
+    m_WhiteTex = new Texture2D("engine/maps/white.png");
+    m_NormBlankTex = new Texture2D("engine/maps/blanknormal.png");
+
     // Render loop
     while (!glfwWindowShouldClose(window)) {
         // Process input
@@ -265,6 +275,10 @@ int FutureApp::Run()
    
 
             if (top != nullptr) {
+                if (m_InitState == false) {
+                    m_InitState = true;
+                    top->InitState();
+                }
                 top->UpdateState(delta);
              //   top->RenderState();
             }
@@ -316,7 +330,9 @@ int FutureApp::Run()
 void FutureApp::PushState(FutureState* state)
 {
 	m_States.push(state);
-    state->InitState();
+    m_InitState = false;
+  
+
 }
 
 
@@ -333,6 +349,11 @@ void FutureApp::PopState()
 
 int FutureApp::GetWidth() {
 
+    if (m_CubeRT != nullptr) {
+
+        return m_CubeRT->GetSize();
+
+    }
     if (m_BoundRT) {
 		return m_BoundRT->GetWidth();
 	}
@@ -342,6 +363,11 @@ int FutureApp::GetWidth() {
 }
 
 int FutureApp::GetHeight() {
+    if (m_CubeRT != nullptr) {
+
+        return m_CubeRT->GetSize();
+
+    }
     if (m_BoundRT) {
         return m_BoundRT->GetHeight();
     }
@@ -361,6 +387,12 @@ void FutureApp::SetBind(RenderTarget2D* rt) {
 	//	glViewport(0, 0, m_Width, m_Height);
     }
 }
+
+void FutureApp::SetBindRTC(RenderTargetCube* rt)
+{
+    m_CubeRT = rt;
+}
+
 
 bool  FutureApp::InitEngine(RENDER_DEVICE_TYPE DevType) {
 	// Initialize the rendering engine here

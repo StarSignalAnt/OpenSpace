@@ -8,11 +8,13 @@ class SceneGraph
 public:
 
 	SceneGraph();
+	void SetCamera(NodeCamera* camera);
 	NodeCamera* GetCamera();
 	GraphNode* GetRoot();
 	void AddNode(GraphNode* node);
 	void AddLight(NodeLight* light);
 	std::vector<NodeLight*> GetLights();
+	void UpdateScene(float dt);
 
 private:
 

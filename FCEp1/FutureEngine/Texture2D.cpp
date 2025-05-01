@@ -91,13 +91,19 @@ Texture2D::Texture2D(int width, int height, unsigned char* data, int channels) {
     }
 }
 
-Texture2D::Texture2D(std::string path) {
+void Texture2D::ThreadTask() {
+    // Do something in the background
+    //while (true) {
+        // Placeholder work
+     //   std::this_thread::sleep_for(std::chrono::seconds(1));
+        // Add exit condition or logging as needed
+   // }
     TextureLoadInfo loadInfo;
     loadInfo.IsSRGB = false; // Changed from true to false to ensure linear RGB colors
     loadInfo.PermultiplyAlpha = false;
 
     RefCntAutoPtr<ITexture> Tex;
-    CreateTextureFromFile(path.c_str(), loadInfo, FutureApp::m_Inst->GetDevice(), &Tex);
+    CreateTextureFromFile(m_Path.c_str(), loadInfo, FutureApp::m_Inst->GetDevice(), &Tex);
     // Get shader resource view from the texture
     m_TextureSRV = Tex->GetDefaultView(TEXTURE_VIEW_SHADER_RESOURCE);
     m_pTexture = Tex;
@@ -107,10 +113,41 @@ Texture2D::Texture2D(std::string path) {
         const auto& texDesc = m_pTexture->GetDesc();
         m_Width = static_cast<int>(texDesc.Width);
         m_Height = static_cast<int>(texDesc.Height);
-        m_Path = path;
+        m_Path = m_Path;
         m_Channels = 4; // Assuming RGBA format
     }
+    m_Loaded = true;
+}
 
+Texture2D::Texture2D(std::string path,bool mt) {
+
+    if (mt) {
+        m_Loaded = false;
+        m_Path = path;
+        m_Thread = std::thread(&Texture2D::ThreadTask, this);
+       
+    }
+    else {
+        TextureLoadInfo loadInfo;
+        loadInfo.IsSRGB = false; // Changed from true to false to ensure linear RGB colors
+        loadInfo.PermultiplyAlpha = false;
+
+        RefCntAutoPtr<ITexture> Tex;
+        CreateTextureFromFile(path.c_str(), loadInfo, FutureApp::m_Inst->GetDevice(), &Tex);
+        // Get shader resource view from the texture
+        m_TextureSRV = Tex->GetDefaultView(TEXTURE_VIEW_SHADER_RESOURCE);
+        m_pTexture = Tex;
+
+        // Get the texture description to retrieve dimensions
+        if (m_pTexture) {
+            const auto& texDesc = m_pTexture->GetDesc();
+            m_Width = static_cast<int>(texDesc.Width);
+            m_Height = static_cast<int>(texDesc.Height);
+            m_Path = path;
+            m_Channels = 4; // Assuming RGBA format
+        }
+        m_Loaded = true;
+    }
     return;
 }
 

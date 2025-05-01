@@ -8,6 +8,12 @@ SceneGraph::SceneGraph() {
 
 }
 
+void SceneGraph::SetCamera(NodeCamera* camera) {
+
+	m_Camera = camera;
+
+}
+
 NodeCamera* SceneGraph::GetCamera() {
 
 	return m_Camera;
@@ -35,5 +41,12 @@ void SceneGraph::AddLight(NodeLight* light) {
 std::vector<NodeLight*> SceneGraph::GetLights() {
 
 	return m_Lights;
+
+}
+
+void SceneGraph::UpdateScene(float dt) {
+
+	m_Camera->Update(dt);
+	m_RootNode->UpdateChildren(dt);
 
 }

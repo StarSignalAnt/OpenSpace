@@ -6,13 +6,16 @@
 #include "MapHelper.hpp"
 #include "GraphicsUtilities.h"
 #include "TextureUtilities.h"
+#include <thread>
+#include "FutureApp.h"
+
 using namespace Diligent;
 
 class Texture2D
 {
 public:
     // Existing constructors
-    Texture2D(std::string path);
+    Texture2D(std::string path,bool mt = false);
     Texture2D(int width, int height, unsigned char* data, int channels);
     Texture2D(int handle, int w, int h)
     {
@@ -41,11 +44,18 @@ public:
 
     static std::vector<Texture2D*> m_Cache;
     RefCntAutoPtr<ITextureView> GetView() {
+        if (!m_Loaded) {
+            return FutureApp::m_Inst->m_WhiteTex->GetView();
+        }
         return m_TextureSRV;
     }
 
     // Get the actual Diligent texture
     RefCntAutoPtr<ITexture> GetTexture() {
+        if (!m_Loaded)
+        {
+            return FutureApp::m_Inst->m_WhiteTex->GetTexture();
+        }
         return m_pTexture;
     }
 
@@ -55,4 +65,7 @@ private:
     std::string m_Path;
     RefCntAutoPtr<ITextureView> m_TextureSRV;
     RefCntAutoPtr<ITexture> m_pTexture;
+    bool m_Loaded = false;
+    std::thread m_Thread;
+    void ThreadTask();
 };

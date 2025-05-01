@@ -7,6 +7,11 @@
 #include "NodeEntity.h"
 #include "RenderMaterial.h"
 #include "Texture2D.h"
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/matrix_decompose.hpp> // For glm::decompose
+#include <glm/gtx/quaternion.hpp>       // For quaternion to matrix
+#include <glm/gtx/transform.hpp>    
+
 
 NodeEntity* ProcessNode(aiNode* node, const aiScene* scene, const std::vector<Mesh3DBuffer*>& meshes) {
     NodeEntity* entity = new NodeEntity();
@@ -14,6 +19,24 @@ NodeEntity* ProcessNode(aiNode* node, const aiScene* scene, const std::vector<Me
     // Set entity name (optional)
     entity->SetName(node->mName.C_Str());
 
+    aiMatrix4x4 aiTransform = node->mTransformation;
+    glm::mat4 transform(
+        aiTransform.a1, aiTransform.b1, aiTransform.c1, aiTransform.d1,
+        aiTransform.a2, aiTransform.b2, aiTransform.c2, aiTransform.d2,
+        aiTransform.a3, aiTransform.b3, aiTransform.c3, aiTransform.d3,
+        aiTransform.a4, aiTransform.b4, aiTransform.c4, aiTransform.d4
+    );
+
+    glm::vec3 scale, translation, skew;
+    glm::vec4 perspective;
+    glm::quat orientation;
+
+    glm::decompose(transform, scale, orientation, translation, skew, perspective);
+    scale = glm::vec3(1, 1, 1);
+
+    entity->SetPosition(translation); // if you have SetPosition
+    entity->SetScale(scale);          // if you have SetScale
+    entity->SetRotation(glm::toMat4(orientation));
     // Add meshes to entity
     for (unsigned int i = 0; i < node->mNumMeshes; ++i) {
         unsigned int meshIndex = node->mMeshes[i];
@@ -64,14 +87,16 @@ NodeEntity* Importer::ImportEntity(std::string path) {
             std::string texturePath = path.C_Str();
 
             // Load your texture here using your own loader
-            Texture2D* tex = new Texture2D(texturePath); // implement this function yourself
+
+
+            Texture2D* tex = new Texture2D(texturePath,true); // implement this function yourself
             rmat->SetColor(tex);
         }
         if (mat->GetTexture(aiTextureType_NORMALS, 0, &path) == AI_SUCCESS) {
             std::string texturePath = path.C_Str();
 
             // Load your texture here using your own loader
-            Texture2D* tex = new Texture2D(texturePath); // implement this function yourself
+            Texture2D* tex = new Texture2D(texturePath,true); // implement this function yourself
             rmat->SetNormal(tex);
         }
         mats.push_back(rmat);

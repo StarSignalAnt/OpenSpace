@@ -14,6 +14,7 @@ class GLFWwindow;
 class RenderTarget2D;
 class SoundLIB;
 class Texture2D;
+class RenderTargetCube;
 
 using namespace Diligent;
 
@@ -33,6 +34,7 @@ public:
 	int GetHeight();
 	bool InitEngine(RENDER_DEVICE_TYPE DevType);
 	void SetBind(RenderTarget2D* rt);
+	void SetBindRTC(RenderTargetCube* rt);
 	RenderTarget2D* GetBind() { return m_BoundRT; };
 	static FutureApp* m_Inst;
 	SoundLIB* SLib;
@@ -41,8 +43,17 @@ public:
 	IDeviceContext* GetContext() { return m_pImmediateContext; }
 	ISwapChain* GetSwapChain() { return m_pSwapChain; }
 	void ClearZ();
+	void ClearRTC() {
+		m_CubeRT = nullptr;
+	}
+
+	Texture2D* m_WhiteTex = nullptr;
+	Texture2D* m_NormBlankTex = nullptr;
+
 private:
 
+
+	bool m_InitState = false;
 	int m_Width;
 	int m_Height;
 	std::string m_App;
@@ -52,7 +63,8 @@ private:
 	//fps
 	int frames = 0;
 	int fps = 0;
-	RenderTarget2D* m_BoundRT;
+	RenderTarget2D* m_BoundRT = nullptr;
+	RenderTargetCube* m_CubeRT = nullptr;
 	Texture2D* m_Icon;
 
 	//DE

@@ -11,6 +11,7 @@ class Mesh3DBuffer;
 class Texture2D;
 class NodeLight;
 class NodeCamera;
+class RenderTargetCube;
 
 class GP3D :
     public GraphicsPipeline
@@ -24,7 +25,7 @@ public:
 	{
 
 	}
-	void Bind(glm::mat4 world, glm::mat4 view, glm::mat4 proj,NodeCamera* cam,NodeLight* light,bool first_light, Mesh3DBuffer* buffer, Texture2D* texture,Texture2D* normal);
+	void Bind(glm::mat4 world, glm::mat4 view, glm::mat4 proj,NodeCamera* cam,NodeLight* light,bool first_light, Mesh3DBuffer* buffer, Texture2D* texture,Texture2D* normal,RenderTargetCube* shadow);
 	void Render() override {
 
 	}

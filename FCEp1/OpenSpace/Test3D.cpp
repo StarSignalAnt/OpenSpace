@@ -6,16 +6,30 @@
 #include "GraphNode.h"
 #include "NodeEntity.h"
 #include "NodeLight.h"
+#include "GameInput.h"
+#include "NodeFPSCamera.h"
+#include "CubeRenderer.h"
+#include <GLFW/glfw3.h>
+#include <GLFW/glfw3native.h>
 
 void Test3D::InitState() {
 
 	auto imp = new Importer;
 
-	m_Ent1 = imp->ImportEntity("content/meshes/test/cube1.fbx");
+	NodeEntity* e2;
+	//for (int i = 0;i < 100;i++) {
+		m_Ent1 = imp->ImportEntity("content/meshes/test/cube1.fbx");
+		e2 = imp->ImportEntity("content/meshes/test/cube2.fbx");
+	
 	m_Graph1 = new SceneGraph;
-	m_Cam1 = m_Graph1->GetCamera();
+
+	//m_Cam1 = m_Graph1->GetCamera();
+	m_Cam1 = new NodeFPSCamera;
+
+	m_Graph1->SetCamera(m_Cam1);
 
 	m_Graph1->AddNode((GraphNode*)m_Ent1);
+	m_Graph1->AddNode((GraphNode*)e2);
 
 	int b = 5;
 
@@ -23,26 +37,41 @@ void Test3D::InitState() {
 
 	m_Renderer->SetRenderGraph(m_Graph1);
 
-	m_Cam1->SetPosition(glm::vec3(0,0, 5));
-
+	m_Cam1->SetPosition(glm::vec3(0,3.5, 4));
+	e2->SetPosition(glm::vec3(0, 3, 0));
 	auto l1 = new NodeLight;
 	m_Graph1->AddLight(l1);
-	l1->SetPosition(glm::vec3(-5,0, 5));
-	l1->SetRange(50);
+	l1->SetPosition(glm::vec3(0,3.5,4));
+	l1->SetRange(45);
+	m_Light1 = l1;
+
+	m_CR = new CubeRenderer(512);
 
 }
 
-
+float ang = 30;
 void Test3D::UpdateState(float dt) {
 
+	auto delta = GameInput::MouseDelta;
+	m_Graph1->UpdateScene(dt);
+	if (GameInput::Keys[GLFW_KEY_SPACE])
+	{
+		m_Light1->SetPosition(m_Cam1->GetPosition());
+	}
+	ang = ang + 10*dt;
+	if (ang > 360) ang = 0;
+//	m_Ent1->SetRotation(glm::vec3(0, ang, 0));
 }
-float ang = 30;
+
 
 void Test3D::RenderState() {
 
-	ang = ang + 0.05;
-	if (ang > 360) ang = 0;
-	m_Ent1->SetRotation(glm::vec3(0, ang, 0));
+
+	
+
+	//m_CR->RenderDepth(m_Renderer, m_Cam1->GetPosition(),50);
+
+	m_Renderer->RenderShadowMaps();
 	m_Renderer->RenderScene();
 //	::vec3(ang,ang,ang));
 }

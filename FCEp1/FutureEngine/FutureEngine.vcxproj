@@ -163,6 +163,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CubeRenderer.h" />
     <ClInclude Include="DrawInfo.h" />
     <ClInclude Include="DrawList.h" />
     <ClInclude Include="FileRequester.h" />
@@ -182,6 +183,7 @@
     <ClInclude Include="GameVideo.h" />
     <ClInclude Include="GP3D.h" />
     <ClInclude Include="GPBasic3D.h" />
+    <ClInclude Include="GPDepth.h" />
     <ClInclude Include="GPMap2D.h" />
     <ClInclude Include="GPSmartDraw.h" />
     <ClInclude Include="GraphicsPipeline.h" />
@@ -221,10 +223,12 @@
     <ClInclude Include="MessageBox.h" />
     <ClInclude Include="NodeCamera.h" />
     <ClInclude Include="NodeEntity.h" />
+    <ClInclude Include="NodeFPSCamera.h" />
     <ClInclude Include="NodeLight.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RenderMaterial.h" />
     <ClInclude Include="RenderTarget2D.h" />
+    <ClInclude Include="RenderTargetCube.h" />
     <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="ShaderModule.h" />
     <ClInclude Include="SmartDraw.h" />
@@ -237,6 +241,7 @@
     <ClInclude Include="UITheme.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CubeRenderer.cpp" />
     <ClCompile Include="DrawInfo.cpp" />
     <ClCompile Include="DrawList.cpp" />
     <ClCompile Include="FileRequester.cpp" />
@@ -256,6 +261,7 @@
     <ClCompile Include="GameVideo.cpp" />
     <ClCompile Include="GP3D.cpp" />
     <ClCompile Include="GPBasic3D.cpp" />
+    <ClCompile Include="GPDepth.cpp" />
     <ClCompile Include="GPMap2D.cpp" />
     <ClCompile Include="GPSmartDraw.cpp" />
     <ClCompile Include="GraphicsPipeline.cpp" />
@@ -291,6 +297,7 @@
     <ClCompile Include="MessageBox.cpp" />
     <ClCompile Include="NodeCamera.cpp" />
     <ClCompile Include="NodeEntity.cpp" />
+    <ClCompile Include="NodeFPSCamera.cpp" />
     <ClCompile Include="NodeLight.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -300,6 +307,7 @@
     </ClCompile>
     <ClCompile Include="RenderMaterial.cpp" />
     <ClCompile Include="RenderTarget2D.cpp" />
+    <ClCompile Include="RenderTargetCube.cpp" />
     <ClCompile Include="SceneGraph.cpp" />
     <ClCompile Include="ShaderModule.cpp" />
     <ClCompile Include="SmartDraw.cpp" />

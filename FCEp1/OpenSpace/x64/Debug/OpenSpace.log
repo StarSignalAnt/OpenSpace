@@ -1,3 +1,28 @@
-﻿  Test3D.cpp
-C:\project\FCEp1\OpenSpace\Test3D.cpp(43,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+﻿FutureEngine.lib(ftinit.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftinit.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftbase.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftbase.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(autofit.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(autofit.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(truetype.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(truetype.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(type1.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(type1.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(cff.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(cff.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(type1cid.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(type1cid.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(pfr.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(pfr.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(type42.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(type42.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(winfnt.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(winfnt.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(pcf.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(pcf.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(bdf.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(bdf.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(psaux.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(psaux.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(psmodule.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(psmodule.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(pshinter.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(pshinter.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(sfnt.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(sfnt.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(smooth.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(smooth.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(raster.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(raster.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(sdf.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(sdf.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(svg.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(svg.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftsystem.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftsystem.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftmm.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftmm.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftgzip.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftgzip.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftlzw.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftlzw.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftbitmap.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftbitmap.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+FutureEngine.lib(ftdebug.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftdebug.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   OpenSpace.vcxproj -> C:\project\FCEp1\FutureEngine\x64\Debug\OpenSpace.exe

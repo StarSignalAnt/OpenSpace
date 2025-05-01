@@ -1,5 +1,9 @@
 ﻿  Scanning sources for module dependencies...
-  GP3D.cpp
+  Importer.cpp
+C:\project\FCEp1\FutureEngine\Importer.cpp(81,22): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(106,23): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(112,26): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(128,26): warning C4018: '<': signed/unsigned mismatch
 Archiver_64d.lib(Archiver_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in glfw3dll.lib(glfw3.dll); second definition ignored
 DiligentCore.lib(ArchiverFactory.obj) : warning LNK4006: "struct Diligent::IArchiverFactory * __cdecl Diligent::GetArchiverFactory(void)" (?GetArchiverFactory@Diligent@@YAPEAUIArchiverFactory@1@XZ) already defined in Archiver_64d.lib(Archiver_64d.dll); second definition ignored
 DiligentCore.lib(Timer.obj) : warning LNK4006: "public: __cdecl Diligent::Timer::Timer(void)" (??0Timer@Diligent@@QEAA@XZ) already defined in Diligent-Common.lib(Timer.obj); second definition ignored

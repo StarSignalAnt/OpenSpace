@@ -1,3 +1,4 @@
+C:\project\FCEp1\FutureEngine\CubeRenderer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\CubeRenderer.obj
 C:\project\FCEp1\FutureEngine\DrawInfo.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\DrawInfo.obj
 C:\project\FCEp1\FutureEngine\DrawList.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\DrawList.obj
 C:\project\FCEp1\FutureEngine\FileRequester.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\FileRequester.obj
@@ -17,6 +18,7 @@ C:\project\FCEp1\FutureEngine\GameUI.cpp;C:\project\FCEp1\FutureEngine\FutureEng
 C:\project\FCEp1\FutureEngine\GameVideo.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GameVideo.obj
 C:\project\FCEp1\FutureEngine\GP3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GP3D.obj
 C:\project\FCEp1\FutureEngine\GPBasic3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPBasic3D.obj
+C:\project\FCEp1\FutureEngine\GPDepth.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPDepth.obj
 C:\project\FCEp1\FutureEngine\GPMap2D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPMap2D.obj
 C:\project\FCEp1\FutureEngine\GPSmartDraw.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPSmartDraw.obj
 C:\project\FCEp1\FutureEngine\GraphicsPipeline.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GraphicsPipeline.obj
@@ -52,10 +54,12 @@ C:\project\FCEp1\FutureEngine\MeshBuffer.cpp;C:\project\FCEp1\FutureEngine\Futur
 C:\project\FCEp1\FutureEngine\MessageBox.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MessageBox.obj
 C:\project\FCEp1\FutureEngine\NodeCamera.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeCamera.obj
 C:\project\FCEp1\FutureEngine\NodeEntity.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeEntity.obj
+C:\project\FCEp1\FutureEngine\NodeFPSCamera.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeFPSCamera.obj
 C:\project\FCEp1\FutureEngine\NodeLight.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeLight.obj
 C:\project\FCEp1\FutureEngine\pch.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\pch.obj
 C:\project\FCEp1\FutureEngine\RenderMaterial.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderMaterial.obj
 C:\project\FCEp1\FutureEngine\RenderTarget2D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderTarget2D.obj
+C:\project\FCEp1\FutureEngine\RenderTargetCube.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderTargetCube.obj
 C:\project\FCEp1\FutureEngine\SceneGraph.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\SceneGraph.obj
 C:\project\FCEp1\FutureEngine\ShaderModule.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\ShaderModule.obj
 C:\project\FCEp1\FutureEngine\SmartDraw.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\SmartDraw.obj

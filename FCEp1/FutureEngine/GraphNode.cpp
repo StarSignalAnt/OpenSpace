@@ -46,6 +46,13 @@ void GraphNode::SetRotation(glm::vec3 rotation) {
 
 }
 
+void GraphNode::SetRotation(glm::mat4 rotation) {
+
+	m_Rotation = rotation;
+
+}
+
+
 glm::mat4 GraphNode::GetWorldMatrix() {
 
 	glm::mat4 root =  glm::mat4(1.0);
@@ -106,5 +113,57 @@ std::string GraphNode::GetName() {
 glm::vec3 GraphNode::GetPosition() {
 
 	return m_Position;
+
+}
+
+void GraphNode::UpdateChildren(float dt) {
+
+	Update(dt);
+	for (auto node : m_Nodes) {
+		node->UpdateChildren(dt);
+
+	}
+
+}
+
+glm::vec3 GraphNode::TransformVector(glm::vec3 delta) {
+
+	return m_Rotation * glm::vec4(delta, 1.0);
+
+}
+
+void GraphNode::Move(glm::vec3 delta) {
+
+	m_Position += TransformVector(delta);
+
+}
+
+void GraphNode::LookAt(glm::vec3 target, glm::vec3 up)
+{
+
+	glm::vec3 forward = glm::normalize(target - m_Position);
+
+	// Compute right and corrected up
+	glm::vec3 right = glm::normalize(glm::cross(forward, up));
+	glm::vec3 upCorrected = glm::cross(right, forward);
+
+	// Create a look-at matrix manually (camera looks along -Z in OpenGL)
+	glm::mat4 rot(1.0f);
+
+	rot[0][0] = right.x;
+	rot[1][0] = right.y;
+	rot[2][0] = right.z;
+
+	rot[0][1] = upCorrected.x;
+	rot[1][1] = upCorrected.y;
+	rot[2][1] = upCorrected.z;
+
+	rot[0][2] = -forward.x;
+	rot[1][2] = -forward.y;
+	rot[2][2] = -forward.z;
+
+	rot[3][3] = 1.0f;
+
+	m_Rotation = rot;
 
 }

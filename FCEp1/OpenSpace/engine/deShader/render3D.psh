@@ -2,6 +2,8 @@ Texture2D    g_Texture;
 SamplerState g_Texture_sampler; // By convention, texture samplers must use the '_sampler' suffix
 Texture2D g_TextureNorm;
 SamplerState g_TextureNorm_sampler; // By convention, texture samplers must use the '_sampler' suffix
+TextureCube g_ShadowMap;
+SamplerState g_ShadowMap_sampler;
 
 struct PSInput
 {
@@ -77,10 +79,65 @@ void main(in  PSInput  PSIn,
     // Simple ambient (constant) term
     float3 ambient = 0.1f * albedo.rgb;
 
+
+float sv = 1.0;
+
+float3 toLight = PSIn.WorldPos - PSIn.lightPos;
+toLight.x = -toLight.x;
+float dist = length(toLight);
+float3 lVec = normalize(toLight);
+
+dist = dist / PSIn.lightInfo.x; // Normalize distance by light range
+
+float shadowSum = 0.0;
+float bias = 0.003;
+
+// PCF sample kernel (3x3)
+float2 offsets[9] = {
+    float2(-1, -1), float2(0, -1), float2(1, -1),
+    float2(-1,  0), float2(0,  0), float2(1,  0),
+    float2(-1,  1), float2(0,  1), float2(1,  1)
+};
+
+float texelSize = 1.0 / 128.0; //
+
+
+
+for (int i = 0; i < 9; ++i)
+{
+    float3 sampleDir = normalize(lVec + float3(offsets[i].x * texelSize, offsets[i].y * texelSize, 0));
+    float ar = g_ShadowMap.Sample(g_ShadowMap_sampler, sampleDir).x;
+
+    if (dist < ar + bias)
+        shadowSum += 1.0;
+}
+sv = shadowSum / 9.0;
+//
+
+/*
+float3 toLight = PSIn.WorldPos - PSIn.lightPos;
+toLight.x=-toLight.x;
+float dist = length(toLight);
+float3 lVec = normalize(toLight);
+
+dist = dist / PSIn.lightInfo.x; // Normalize distance by light range
+
+//lVec.x=-lVec.x;
+
+
+float ar = g_ShadowMap.Sample(g_ShadowMap_sampler, lVec).x;
+
+float bias = 0.003; // or calculate based on angle
+
+if(dist >= ar + bias){
+    sv = 0.0;
+}
+*/
+
 //   float4 Color = g_Texture.Sample(g_Texture_sampler, PSIn.UV.xy)*PSIn.Color;
     float4 Color;
 
-    Color.rgb = diffuse;//+specular;
+    Color.rgb = diffuse * sv;//+specular;
     Color.a = 1.0;
 
     PSOut.Color = Color;

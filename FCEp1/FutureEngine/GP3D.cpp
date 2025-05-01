@@ -7,6 +7,8 @@
 #include "NodeLight.h"
 #include "NodeCamera.h"
 #include <glm/gtc/type_ptr.hpp>
+#include "RenderTargetCube.h"
+
 struct R3DConstants
 {
 
@@ -174,6 +176,7 @@ void GP3D::CreatePL() {
     {
         {SHADER_TYPE_PIXEL, "g_Texture", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
                 {SHADER_TYPE_PIXEL, "g_TextureNorm", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
+                           {SHADER_TYPE_PIXEL, "g_ShadowMap", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
 
     };
     // clang-format on
@@ -185,12 +188,13 @@ void GP3D::CreatePL() {
     SamplerDesc SamLinearClampDesc
     {
         FILTER_TYPE_LINEAR, FILTER_TYPE_LINEAR, FILTER_TYPE_LINEAR,
-        TEXTURE_ADDRESS_CLAMP, TEXTURE_ADDRESS_CLAMP, TEXTURE_ADDRESS_CLAMP
+        TEXTURE_ADDRESS_WRAP, TEXTURE_ADDRESS_WRAP, TEXTURE_ADDRESS_WRAP
     };
     ImmutableSamplerDesc ImtblSamplers[] =
     {
         {SHADER_TYPE_PIXEL, "g_Texture", SamLinearClampDesc},
               {SHADER_TYPE_PIXEL, "g_TextureNorm", SamLinearClampDesc},
+                  {SHADER_TYPE_PIXEL, "g_ShadowMap", SamLinearClampDesc},
 
     };
     // clang-format on
@@ -212,7 +216,7 @@ void GP3D::CreatePL() {
 
 }
 
-void GP3D::Bind(glm::mat4 world, glm::mat4 view, glm::mat4 proj,NodeCamera* cam,NodeLight* light,bool first_light, Mesh3DBuffer* buffer, Texture2D* texture,Texture2D* normal) {
+void GP3D::Bind(glm::mat4 world, glm::mat4 view, glm::mat4 proj,NodeCamera* cam,NodeLight* light,bool first_light, Mesh3DBuffer* buffer, Texture2D* texture,Texture2D* normal,RenderTargetCube*shadow) {
     // Ensure that the constant buffer is up-to-date for the current frame
     {
         MapHelper<R3DConstants> CBConstants(FutureApp::m_Inst->GetContext(), m_Constants, MAP_WRITE, MAP_FLAG_DISCARD);
@@ -233,6 +237,7 @@ void GP3D::Bind(glm::mat4 world, glm::mat4 view, glm::mat4 proj,NodeCamera* cam,
     // Set texture
     m_SRB->GetVariableByName(SHADER_TYPE_PIXEL, "g_Texture")->Set(texture->GetView());
     m_SRB->GetVariableByName(SHADER_TYPE_PIXEL, "g_TextureNorm")->Set(normal->GetView());
+    m_SRB->GetVariableByName(SHADER_TYPE_PIXEL, "g_ShadowMap")->Set(shadow->GetSRV());
 // 
     // Ensure vertex and index buffers are correctly set
     FutureApp::m_Inst->GetContext()->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);

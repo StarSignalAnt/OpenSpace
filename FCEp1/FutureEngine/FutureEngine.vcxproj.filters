@@ -294,8 +294,20 @@
     <ClInclude Include="GP3D.h">
       <Filter>GP</Filter>
     </ClInclude>
+    <ClInclude Include="NodeFPSCamera.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetCube.h">
+      <Filter>RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="GPDepth.h">
+      <Filter>GP</Filter>
+    </ClInclude>
     <ClInclude Include="NodeLight.h">
-      <Filter>Header Files</Filter>
+      <Filter>Scene\Nodes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -503,8 +515,20 @@
     <ClCompile Include="GP3D.cpp">
       <Filter>GP</Filter>
     </ClCompile>
+    <ClCompile Include="NodeFPSCamera.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTargetCube.cpp">
+      <Filter>RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="GPDepth.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
     <ClCompile Include="NodeLight.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Scene\Nodes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
