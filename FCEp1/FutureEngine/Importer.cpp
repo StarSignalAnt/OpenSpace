@@ -6,6 +6,10 @@
 #include "Mesh3DBuffer.h"
 #include "NodeEntity.h"
 #include "MaterialPBR3D.h"
+#include "MaterialDepth3D.h"
+#include "MaterialPBRS3D.h"
+#include "MaterialDepthS3D.h"
+
 #include "Texture2D.h"
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/matrix_decompose.hpp> // For glm::decompose
@@ -205,6 +209,7 @@ NodeEntity* Importer::ImportEntity(std::string path) {
         buf->Finalize();
         
         buf->SetMaterial(mats[mesh->mMaterialIndex]);
+        buf->SetDepthMaterial(new MaterialDepth3D);
         meshes.push_back(buf);
 
 
@@ -253,7 +258,7 @@ NodeSkeletalEntity* Importer::ImportSkeletal(std::string path) {
         auto mat = scene->mMaterials[i];
         auto name = std::string(mat->GetName().C_Str());
 
-        auto v_mat = new MaterialPBR3D;
+        auto v_mat = new MaterialPBRS3D;
 
         std::string check = mat_path + name + ".material";
 
@@ -287,7 +292,9 @@ NodeSkeletalEntity* Importer::ImportSkeletal(std::string path) {
 
             mat->GetTexture(aiTextureType_DIFFUSE, j, &str);
             str = ExtractFilename(str.C_Str()).c_str();
-            v_mat->SetColor(new Texture2D(path_alone + getFilename(std::string(str.C_Str())), true));
+            //v_mat->SetColor();
+
+            v_mat->SetTexture(new Texture2D(path_alone + getFilename(std::string(str.C_Str())), true), 0);
             //GLuint textureID = LoadTextureFromFile(directory + '/' + str.C_Str());
             std::cout << "Loaded diffuse texture ID:  for texture " << str.C_Str() << std::endl;
         }
@@ -308,7 +315,8 @@ NodeSkeletalEntity* Importer::ImportSkeletal(std::string path) {
 
             mat->GetTexture(aiTextureType_NORMALS, j, &str);
             str = ExtractFilename(str.C_Str()).c_str();
-            v_mat->SetNormal(new Texture2D(path_alone + std::string(str.C_Str()), true));
+            v_mat->SetTexture(new Texture2D(path_alone + std::string(str.C_Str()), true),1);
+
             //GLuint textureID = LoadTextureFromFile(directory + '/' + str.C_Str());
             std::cout << "Loaded normal texture ID: for texture " << str.C_Str() << std::endl;
         }
@@ -329,7 +337,7 @@ NodeSkeletalEntity* Importer::ImportSkeletal(std::string path) {
 
 
         mesh->SetMaterial(materials[scene->mMeshes[i]->mMaterialIndex]);
-
+        mesh->SetDepthMaterial(new MaterialDepthS3D);
         //mesh->SetDepthMaterial(new MaterialActorDepth);
 
 

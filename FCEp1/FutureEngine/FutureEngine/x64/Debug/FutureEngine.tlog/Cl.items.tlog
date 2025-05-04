@@ -56,7 +56,10 @@ C:\project\FCEp1\FutureEngine\IVerticalScroller.cpp;C:\project\FCEp1\FutureEngin
 C:\project\FCEp1\FutureEngine\IVideoPlayer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\IVideoPlayer.obj
 C:\project\FCEp1\FutureEngine\IWindow.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\IWindow.obj
 C:\project\FCEp1\FutureEngine\MaterialBasic3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialBasic3D.obj
+C:\project\FCEp1\FutureEngine\MaterialDepth3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialDepth3D.obj
+C:\project\FCEp1\FutureEngine\MaterialDepthS3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialDepthS3D.obj
 C:\project\FCEp1\FutureEngine\MaterialPBR3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialPBR3D.obj
+C:\project\FCEp1\FutureEngine\MaterialPBRS3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialPBRS3D.obj
 C:\project\FCEp1\FutureEngine\MathsHelp.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MathsHelp.obj
 C:\project\FCEp1\FutureEngine\MathsOps.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MathsOps.obj
 C:\project\FCEp1\FutureEngine\Mesh3DBuffer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\Mesh3DBuffer.obj

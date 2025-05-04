@@ -34,7 +34,7 @@ void Test3D::InitState() {
 
 	m_Graph1->AddNode((GraphNode*)m_Ent1);
 //	m_Graph1->AddNode((GraphNode*)e2);
-//	m_Graph1->AddNode((GraphNode*)m_S1);
+	m_Graph1->AddNode((GraphNode*)m_S1);
 	m_S1->SetScale(glm::vec3(0.02, 0.02, 0.02));
 	int b = 5;
 
@@ -81,7 +81,7 @@ void Test3D::UpdateState(float dt) {
 
 void Test3D::RenderState() {
 
-	m_PS1->Spawn(glm::vec3(0, 3, 0), 15);
+	//m_PS1->Spawn(glm::vec3(0, 3, 0), 15);
 	
 	//m_PS1->Spawn(glm::vec3(0, 3, 0), 5);
 	//m_CR->RenderDepth(m_Renderer, m_Cam1->GetPosition(),50);

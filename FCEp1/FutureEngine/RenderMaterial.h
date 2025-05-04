@@ -47,7 +47,7 @@ public:
 	void SetNode(GraphNode* node);
 	void SetMesh(Mesh3DBuffer* buffer, int index);
 	void SetMatrix(glm::mat4 matrix, int index);
-	void SetBoneMatrix(glm::mat4 matrix, int index);
+	void SetBoneMatrix(float4x4 matrix, int index);
 	void SetShadow(RenderTargetCube* cube);
 
 	virtual void Bind() = 0;
@@ -65,7 +65,7 @@ protected:
 	GraphNode* m_RenderNode;
 	Mesh3DBuffer* m_RenderBuffers[128];
 	glm::mat4 m_RenderMatrices[256];
-	glm::mat4 m_RenderBoneMatrices[256];
+	float4x4 m_RenderBoneMatrices[256];
 	RenderTargetCube* m_Shadow;
 
 	RefCntAutoPtr<IPipelineState> m_pPSO;

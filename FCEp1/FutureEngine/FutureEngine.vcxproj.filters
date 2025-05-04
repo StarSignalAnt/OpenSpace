@@ -351,6 +351,15 @@
     <ClInclude Include="MaterialPBR3D.h">
       <Filter>Material\Types</Filter>
     </ClInclude>
+    <ClInclude Include="MaterialDepth3D.h">
+      <Filter>Material\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialPBRS3D.h">
+      <Filter>Material\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialDepthS3D.h">
+      <Filter>Material\Types</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FutureEngine.cpp">
@@ -606,6 +615,15 @@
       <Filter>Material\Types</Filter>
     </ClCompile>
     <ClCompile Include="MaterialPBR3D.cpp">
+      <Filter>Material\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialDepth3D.cpp">
+      <Filter>Material\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialPBRS3D.cpp">
+      <Filter>Material\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialDepthS3D.cpp">
       <Filter>Material\Types</Filter>
     </ClCompile>
   </ItemGroup>

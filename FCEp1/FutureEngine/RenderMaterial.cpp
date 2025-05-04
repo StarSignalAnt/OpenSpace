@@ -41,9 +41,9 @@ void RenderMaterial::SetMatrix(glm::mat4 matrix, int index) {
 
 }
 
-void RenderMaterial::SetBoneMatrix(glm::mat4 matrix, int index) {
+void RenderMaterial::SetBoneMatrix(float4x4 matrix, int index) {
 
-	m_RenderBoneMatrices[index] = index;
+	m_RenderBoneMatrices[index] = matrix;
 
 }
 

@@ -129,6 +129,14 @@ public:
     RenderMaterial* GetMaterial() {
         return m_Material;
     }
+    void SetDepthMaterial(RenderMaterial* material) {
+        m_DepthMaterial = material;
+    }
+    RenderMaterial* GetDepthMaterial()
+    {
+        return m_DepthMaterial;
+    }
+
 
 private:
     void CreateDynamicBuffers(int vertexCapacity, int triangleCapacity);
@@ -151,5 +159,6 @@ private:
     void* m_MappedVertexData;
     void* m_MappedIndexData;
     RenderMaterial* m_Material;
+    RenderMaterial* m_DepthMaterial;
 };
 

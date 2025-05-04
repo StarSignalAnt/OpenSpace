@@ -225,7 +225,10 @@
     <ClInclude Include="llama\llama-cpp.h" />
     <ClInclude Include="llama\llama.h" />
     <ClInclude Include="MaterialBasic3D.h" />
+    <ClInclude Include="MaterialDepth3D.h" />
+    <ClInclude Include="MaterialDepthS3D.h" />
     <ClInclude Include="MaterialPBR3D.h" />
+    <ClInclude Include="MaterialPBRS3D.h" />
     <ClInclude Include="MathsHelp.h" />
     <ClInclude Include="MathsOps.h" />
     <ClInclude Include="Mesh3DBuffer.h" />
@@ -311,7 +314,10 @@
     <ClCompile Include="IVideoPlayer.cpp" />
     <ClCompile Include="IWindow.cpp" />
     <ClCompile Include="MaterialBasic3D.cpp" />
+    <ClCompile Include="MaterialDepth3D.cpp" />
+    <ClCompile Include="MaterialDepthS3D.cpp" />
     <ClCompile Include="MaterialPBR3D.cpp" />
+    <ClCompile Include="MaterialPBRS3D.cpp" />
     <ClCompile Include="MathsHelp.cpp" />
     <ClCompile Include="MathsOps.cpp" />
     <ClCompile Include="Mesh3DBuffer.cpp" />

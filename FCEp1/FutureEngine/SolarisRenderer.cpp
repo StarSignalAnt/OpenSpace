@@ -139,11 +139,26 @@ void SolarisRenderer::RenderNodeDepth(GraphNode* node) {
 
 			auto lights = m_RenderGraph->GetLights();
 
+			auto mat = mesh->GetDepthMaterial();
+
+
+			mat->SetCamera(m_RenderCamera);
+			mat->SetNode(node);
+			//mat->SetLight(light);
+
+			mat->SetMesh(mesh, 0);
+			mat->SetMatrix(node->GetWorldMatrix(), 0);
+			mat->SetMatrix(m_RenderCamera->GetWorldMatrix(), 1);
+			mat->SetMatrix(m_RenderCamera->GetProjectionMatrix(), 2);
+			//mat->SetShadow(light->GetShadowMap());
+			mat->Bind();
+			mat->Render();
 
 			//for (auto light : lights) {
 			//	m_Tex = mesh->GetMaterial()->GetColor();
-				m_GPDepth->Bind(entity->GetWorldMatrix(), m_RenderCamera->GetWorldMatrix(), m_RenderCamera->GetProjectionMatrix(), m_RenderCamera, mesh);
-				m_GPDepth->Render(mesh);
+			//	m_GPDepth->Bind(entity->GetWorldMatrix(), m_RenderCamera->GetWorldMatrix(), m_RenderCamera->GetProjectionMatrix(), m_RenderCamera, mesh);
+			//	m_GPDepth->Render(mesh);
+
 
 				int a = 5;
 			//}
@@ -162,11 +177,29 @@ void SolarisRenderer::RenderNodeDepth(GraphNode* node) {
 
 			auto lights = m_RenderGraph->GetLights();
 
+			auto mat = mesh->GetDepthMaterial();
+
+
+			mat->SetCamera(m_RenderCamera);
+			mat->SetNode(node);
+			//mat->SetLight(light);
+
+			mat->SetMesh(mesh, 0);
+			mat->SetMatrix(node->GetWorldMatrix(), 0);
+			mat->SetMatrix(m_RenderCamera->GetWorldMatrix(), 1);
+			mat->SetMatrix(m_RenderCamera->GetProjectionMatrix(), 2);
+			//mat->SetShadow(light->GetShadowMap());
+			auto bones = entity->GetBones();
+			for (int i = 0;i < 100;i++) {
+				mat->SetBoneMatrix(bones[i], i);
+			}
+			mat->Bind();
+			mat->Render();
 
 			//for (auto light : lights) {
 			//	m_Tex = mesh->GetMaterial()->GetColor();
-			m_GPSDepth->Bind(entity->GetWorldMatrix(), m_RenderCamera->GetWorldMatrix(), m_RenderCamera->GetProjectionMatrix(), m_RenderCamera, mesh,entity->GetBones());
-			m_GPSDepth->Render(mesh);
+			//	m_GPDepth->Bind(entity->GetWorldMatrix(), m_RenderCamera->GetWorldMatrix(), m_RenderCamera->GetProjectionMatrix(), m_RenderCamera, mesh);
+			//	m_GPDepth->Render(mesh);
 
 
 			int a = 5;
@@ -174,6 +207,9 @@ void SolarisRenderer::RenderNodeDepth(GraphNode* node) {
 
 
 		}
+
+
+	
 
 	}
 
@@ -252,7 +288,7 @@ void SolarisRenderer::RenderNode(GraphNode* node) {
 		}
 
 	}
-	else if(dynamic_cast<NodeSkeletalEntity*>(node))
+	else if (dynamic_cast<NodeSkeletalEntity*>(node))
 	{
 
 		auto entity = dynamic_cast<NodeSkeletalEntity*>(node);
@@ -260,17 +296,39 @@ void SolarisRenderer::RenderNode(GraphNode* node) {
 		for (auto mesh : entity->GetMeshes()) {
 
 
+
 			auto lights = m_RenderGraph->GetLights();
 
-
+			auto mat = mesh->GetMaterial();
 			for (auto light : lights) {
-				m_Tex = mesh->GetMaterial()->GetColor();
-				m_GPS3D->Bind(entity->GetWorldMatrix(), m_RenderCamera->GetWorldMatrix(), m_RenderCamera->GetProjectionMatrix(), m_RenderCamera, light, true, mesh, m_Tex, mesh->GetMaterial()->GetNormal(), light->GetShadowMap(),entity->GetBones());
-				m_GPS3D->Render(mesh);
+				//m_Tex = mesh->GetMaterial()->GetColor();
+				mat->SetCamera(m_RenderCamera);
+				mat->SetNode(node);
+				mat->SetLight(light);
+				mat->SetMesh(mesh, 0);
+				mat->SetMatrix(node->GetWorldMatrix(), 0);
+				mat->SetMatrix(m_RenderCamera->GetWorldMatrix(), 1);
+				mat->SetMatrix(m_RenderCamera->GetProjectionMatrix(), 2);
+				mat->SetShadow(light->GetShadowMap());
+				auto bones = entity->GetBones();
+				for (int i = 0;i < 100;i++) {
+					mat->SetBoneMatrix(bones[i], i);
+				}
+				mat->Bind();
+				mat->Render();
+
+				//m_GP3D->Bind(entity->GetWorldMatrix(), m_RenderCamera->GetWorldMatrix(), m_RenderCamera->GetProjectionMatrix(),m_RenderCamera,light,true, mesh, m_Tex, mesh->GetMaterial()->GetNormal(),light->GetShadowMap());
+				//m_GP3D->Render(mesh);
+
 				int a = 5;
 			}
 
 		}
+
+
+
+
+
 
 	}
 

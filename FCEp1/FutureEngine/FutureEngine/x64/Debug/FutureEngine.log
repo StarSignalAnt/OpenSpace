@@ -1,5 +1,9 @@
 ﻿  Scanning sources for module dependencies...
-  MaterialPBR3D.cpp
+  SolarisRenderer.cpp
+C:\project\FCEp1\FutureEngine\ParticleSystem.h(17,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'SolarisRenderer.cpp')
+  
+C:\project\FCEp1\FutureEngine\SolarisRenderer.cpp(504,50): warning C4267: '=': conversion from 'size_t' to 'Diligent::Uint32', possible loss of data
 Archiver_64d.lib(Archiver_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in glfw3dll.lib(glfw3.dll); second definition ignored
 DiligentCore.lib(ArchiverFactory.obj) : warning LNK4006: "struct Diligent::IArchiverFactory * __cdecl Diligent::GetArchiverFactory(void)" (?GetArchiverFactory@Diligent@@YAPEAUIArchiverFactory@1@XZ) already defined in Archiver_64d.lib(Archiver_64d.dll); second definition ignored
 DiligentCore.lib(Timer.obj) : warning LNK4006: "public: __cdecl Diligent::Timer::Timer(void)" (??0Timer@Diligent@@QEAA@XZ) already defined in Diligent-Common.lib(Timer.obj); second definition ignored
