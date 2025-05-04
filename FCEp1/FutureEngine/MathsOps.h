@@ -6,6 +6,7 @@ public:
 
 	static glm::vec2 TransformCoord(const glm::vec2& coord, float angleInDegrees=0.0f, float scale=1.0f);
 	static float RndFloat(float min, float max);
+	static int RndInt(int min,int max);
 	static float Deg2Rad(float rad);
 
 };

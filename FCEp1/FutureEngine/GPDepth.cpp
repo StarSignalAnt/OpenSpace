@@ -156,7 +156,9 @@ void GPDepth::CreatePL() {
         LayoutElement{2, 0, 4, VT_FLOAT32, False}, // Color
        LayoutElement{3, 0, 3, VT_FLOAT32, False},
         LayoutElement{4, 0, 3, VT_FLOAT32, False},
-         LayoutElement{5, 0, 3, VT_FLOAT32, False}
+         LayoutElement{5, 0, 3, VT_FLOAT32, False},
+         LayoutElement{6,0,4,VT_FLOAT32,False},
+         LayoutElement{7,0,4,VT_FLOAT32,False}
     };
     // clang-format on
     PSOCreateInfo.GraphicsPipeline.InputLayout.LayoutElements = LayoutElems;

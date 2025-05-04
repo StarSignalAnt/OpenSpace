@@ -93,9 +93,9 @@ float shadowSum = 0.0;
 float bias = 0.003;
 
 // PCF sample kernel (3x3)
-float2 offsets[9] = {
+float2 offsets[8] = {
     float2(-1, -1), float2(0, -1), float2(1, -1),
-    float2(-1,  0), float2(0,  0), float2(1,  0),
+    float2(-1,  0),  float2(1,  0),
     float2(-1,  1), float2(0,  1), float2(1,  1)
 };
 
@@ -103,7 +103,11 @@ float texelSize = 1.0 / 128.0; //
 
 
 
-for (int i = 0; i < 9; ++i)
+float ch =  g_ShadowMap.Sample(g_ShadowMap_sampler, lVec).x;
+
+if(dist > ch+bias){
+
+for (int i = 0; i < 8; ++i)
 {
     float3 sampleDir = normalize(lVec + float3(offsets[i].x * texelSize, offsets[i].y * texelSize, 0));
     float ar = g_ShadowMap.Sample(g_ShadowMap_sampler, sampleDir).x;
@@ -111,7 +115,9 @@ for (int i = 0; i < 9; ++i)
     if (dist < ar + bias)
         shadowSum += 1.0;
 }
-sv = shadowSum / 9.0;
+sv = shadowSum / 8.0;
+}
+
 //
 
 /*

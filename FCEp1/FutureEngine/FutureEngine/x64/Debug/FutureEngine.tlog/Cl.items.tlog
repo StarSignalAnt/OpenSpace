@@ -1,3 +1,7 @@
+C:\project\FCEp1\FutureEngine\Animation.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\Animation.obj
+C:\project\FCEp1\FutureEngine\Animator.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\Animator.obj
+C:\project\FCEp1\FutureEngine\Bone.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\Bone.obj
+C:\project\FCEp1\FutureEngine\BoneInfo.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\BoneInfo.obj
 C:\project\FCEp1\FutureEngine\CubeRenderer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\CubeRenderer.obj
 C:\project\FCEp1\FutureEngine\DrawInfo.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\DrawInfo.obj
 C:\project\FCEp1\FutureEngine\DrawList.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\DrawList.obj
@@ -20,6 +24,9 @@ C:\project\FCEp1\FutureEngine\GP3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngin
 C:\project\FCEp1\FutureEngine\GPBasic3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPBasic3D.obj
 C:\project\FCEp1\FutureEngine\GPDepth.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPDepth.obj
 C:\project\FCEp1\FutureEngine\GPMap2D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPMap2D.obj
+C:\project\FCEp1\FutureEngine\GPParticle.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPParticle.obj
+C:\project\FCEp1\FutureEngine\GPS3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPS3D.obj
+C:\project\FCEp1\FutureEngine\GPSDepth.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPSDepth.obj
 C:\project\FCEp1\FutureEngine\GPSmartDraw.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPSmartDraw.obj
 C:\project\FCEp1\FutureEngine\GraphicsPipeline.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GraphicsPipeline.obj
 C:\project\FCEp1\FutureEngine\GraphNode.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GraphNode.obj
@@ -48,6 +55,9 @@ C:\project\FCEp1\FutureEngine\IVerticalMenu.cpp;C:\project\FCEp1\FutureEngine\Fu
 C:\project\FCEp1\FutureEngine\IVerticalScroller.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\IVerticalScroller.obj
 C:\project\FCEp1\FutureEngine\IVideoPlayer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\IVideoPlayer.obj
 C:\project\FCEp1\FutureEngine\IWindow.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\IWindow.obj
+C:\project\FCEp1\FutureEngine\MaterialBasic3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialBasic3D.obj
+C:\project\FCEp1\FutureEngine\MaterialPBR3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MaterialPBR3D.obj
+C:\project\FCEp1\FutureEngine\MathsHelp.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MathsHelp.obj
 C:\project\FCEp1\FutureEngine\MathsOps.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MathsOps.obj
 C:\project\FCEp1\FutureEngine\Mesh3DBuffer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\Mesh3DBuffer.obj
 C:\project\FCEp1\FutureEngine\MeshBuffer.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\MeshBuffer.obj
@@ -56,6 +66,8 @@ C:\project\FCEp1\FutureEngine\NodeCamera.cpp;C:\project\FCEp1\FutureEngine\Futur
 C:\project\FCEp1\FutureEngine\NodeEntity.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeEntity.obj
 C:\project\FCEp1\FutureEngine\NodeFPSCamera.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeFPSCamera.obj
 C:\project\FCEp1\FutureEngine\NodeLight.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeLight.obj
+C:\project\FCEp1\FutureEngine\NodeSkeletalEntity.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\NodeSkeletalEntity.obj
+C:\project\FCEp1\FutureEngine\ParticleSystem.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\ParticleSystem.obj
 C:\project\FCEp1\FutureEngine\pch.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\pch.obj
 C:\project\FCEp1\FutureEngine\RenderMaterial.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderMaterial.obj
 C:\project\FCEp1\FutureEngine\RenderTarget2D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderTarget2D.obj

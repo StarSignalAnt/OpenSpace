@@ -20,7 +20,8 @@ struct Vertex3D {
 	float3 normal;
 	float3 tangent;
 	float3 bitangent;
-
+    float4 bone_ids; //19
+    float4 bone_weights;
 
 };
 
@@ -38,12 +39,27 @@ public:
 
     };
 
-    void AddVertex(const Vertex3D& vertex) {
+    void AddVertex(Vertex3D& vertex,bool reset) {
+        if (reset) {
+            //vertex.bone_ids = float4(-1, -1, -1, -1);
+            //vertex.bone_weights = float4(0, 0, 0, 0);
+            vertex.bone_ids = float4(-1, -1, -1, -1);
+            vertex.bone_weights = float4(0, 0, 0, 0);
+        }
         vertices.push_back(vertex);
+
     }
 
     void AddTriangle(const Tri3D& tri) {
         triangles.push_back(tri);
+    }
+
+    Vertex3D GetVertex(int num) {
+        return vertices[num];
+    }
+
+    void SetVertex(int id,Vertex3D vertex) {
+        vertices[id] = vertex;
     }
 
     void Finalize() {

@@ -1,0 +1,144 @@
+Texture2D    g_Texture;
+SamplerState g_Texture_sampler; // By convention, texture samplers must use the '_sampler' suffix
+Texture2D g_TextureNorm;
+SamplerState g_TextureNorm_sampler; // By convention, texture samplers must use the '_sampler' suffix
+TextureCube g_ShadowMap;
+SamplerState g_ShadowMap_sampler;
+
+struct PSInput
+{
+    float4 Pos       : SV_POSITION;
+    float3 WorldPos  : TEXCOORD0;
+    float3 Normal    : TEXCOORD1;
+    float3 Tangent   : TEXCOORD2;
+    float3 BiNormal  : TEXCOORD3;
+    float3 UV        : TEXCOORD4;
+    float3 lightPos : TEXCOORD5;
+    float3 lightDiff : TEXCOORD6;
+    float4 lightInfo : TEXCOORD7;
+    float4 Color : TEXCOORD8;
+      float3 camPos : TEXCOORD9;
+};
+
+struct PSOutput
+{
+    float4 Color : SV_TARGET;
+};
+
+
+float3 UnpackNormal(float3 n)
+{
+    return n * 2.0f - 1.0f;
+}
+
+// Helper: compute Blinn-Phong specular (returns intensity, multiply by lightColor outside)
+float3 BlinnPhongSpecular(float3 N, float3 L, float3 V, float shininess)
+{
+    float3 H = normalize(L + V);
+    float nDotH = max(dot(N, H), 0.0f);
+    return pow(nDotH, shininess);
+}
+
+
+// Note that if separate shader objects are not supported (this is only the case for old GLES3.0 devices), vertex
+// shader output variable name must match exactly the name of the pixel shader input variable.
+// If the variable has structure type (like in this example), the structure declarations must also be identical.
+void main(in  PSInput  PSIn,
+          out PSOutput PSOut)
+{
+
+
+    float4 albedo    = g_Texture.Sample(g_Texture_sampler, PSIn.UV.xy);
+    float3 normSample = g_TextureNorm.Sample(g_TextureNorm_sampler, PSIn.UV.xy).rgb;
+
+    // Unpack normal map (tangent-space normal)
+    float3 normalTS = UnpackNormal(normSample);
+
+    // Transform normal to world space using TBN
+    float3x3 TBN = float3x3(PSIn.Tangent, PSIn.BiNormal, PSIn.Normal);
+    float3 N = normalize(mul(normalTS, TBN));
+
+    //-2
+
+     float3 L = PSIn.lightPos - PSIn.WorldPos;
+    float distance = length(L);
+    L = normalize(L);
+    float3 V = normalize(PSIn.camPos - PSIn.WorldPos);
+
+    // Compute attenuation (clamped)
+    float atten = saturate(1.0f - distance / PSIn.lightInfo.x);
+
+    // Compute diffuse component
+    float NdotL = saturate(dot(N, L)); // clamp to [0,1]
+    float3 diffuse = NdotL * albedo.rgb * PSIn.lightDiff * atten;
+
+    // Compute specular component (white specular for simplicity)
+    float shininess = 32.0f; // specular exponent
+    float3 specular = PSIn.lightDiff * BlinnPhongSpecular(N, L, V, shininess) * atten;
+
+    // Simple ambient (constant) term
+    float3 ambient = 0.1f * albedo.rgb;
+
+
+float sv = 1.0;
+
+float3 toLight = PSIn.WorldPos - PSIn.lightPos;
+toLight.x = -toLight.x;
+float dist = length(toLight);
+float3 lVec = normalize(toLight);
+
+dist = dist / PSIn.lightInfo.x; // Normalize distance by light range
+
+float shadowSum = 0.0;
+float bias = 0.003;
+
+// PCF sample kernel (3x3)
+float2 offsets[9] = {
+    float2(-1, -1), float2(0, -1), float2(1, -1),
+    float2(-1,  0), float2(0,  0), float2(1,  0),
+    float2(-1,  1), float2(0,  1), float2(1,  1)
+};
+
+float texelSize = 1.0 / 128.0; //
+
+
+
+for (int i = 0; i < 9; ++i)
+{
+    float3 sampleDir = normalize(lVec + float3(offsets[i].x * texelSize, offsets[i].y * texelSize, 0));
+    float ar = g_ShadowMap.Sample(g_ShadowMap_sampler, sampleDir).x;
+
+    if (dist < ar + bias)
+        shadowSum += 1.0;
+}
+sv = shadowSum / 9.0;
+//
+
+/*
+float3 toLight = PSIn.WorldPos - PSIn.lightPos;
+toLight.x=-toLight.x;
+float dist = length(toLight);
+float3 lVec = normalize(toLight);
+
+dist = dist / PSIn.lightInfo.x; // Normalize distance by light range
+
+//lVec.x=-lVec.x;
+
+
+float ar = g_ShadowMap.Sample(g_ShadowMap_sampler, lVec).x;
+
+float bias = 0.003; // or calculate based on angle
+
+if(dist >= ar + bias){
+    sv = 0.0;
+}
+*/
+
+//   float4 Color = g_Texture.Sample(g_Texture_sampler, PSIn.UV.xy)*PSIn.Color;
+    float4 Color;
+
+    Color.rgb = diffuse * sv;//+specular;
+    Color.a = 1.0;
+
+    PSOut.Color = Color;
+}

@@ -19,6 +19,8 @@ struct VSInput
     float3 Normal  : ATTRIB3;    // World position or some custom 3D value
     float3 Tangent    : ATTRIB4;    // Custom data (e.g. lighting, effects, etc.)
     float3 BiNormal    : ATTRIB5; 
+    float4 bone_ids : ATTRIB6;
+    float4 bone_weights : ATTRIB7;
 };
 
 struct PSInput 

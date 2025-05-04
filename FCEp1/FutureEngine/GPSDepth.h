@@ -1,0 +1,41 @@
+#pragma once
+#include "GraphicsPipeline.h"
+
+
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/glm.hpp>
+#include <glm/gtc/quaternion.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
+class Mesh3DBuffer;
+class Texture2D;
+class NodeLight;
+class NodeCamera;
+
+class GPSDepth :
+    public GraphicsPipeline
+{
+public:
+
+	GPSDepth();
+	void CreatePL() override;
+	void Bind() override {
+	}
+	void Bind(MeshBuffer* buf, Texture2D* tex) override
+	{
+
+	}
+	void Bind(glm::mat4 world, glm::mat4 view, glm::mat4 proj, NodeCamera* cam, Mesh3DBuffer* buffer,std::vector<float4x4> bones);
+	void Render() override {
+
+	}
+	void Render(MeshBuffer* buf) {
+
+	}
+	void Render(Mesh3DBuffer* buffer);
+
+
+private:
+};
+

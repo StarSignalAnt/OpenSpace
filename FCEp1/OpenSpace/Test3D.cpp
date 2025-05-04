@@ -11,6 +11,9 @@
 #include "CubeRenderer.h"
 #include <GLFW/glfw3.h>
 #include <GLFW/glfw3native.h>
+#include "NodeSkeletalEntity.h"
+#include "ParticleSystem.h"
+#include "Texture2D.h"
 
 void Test3D::InitState() {
 
@@ -21,6 +24,7 @@ void Test3D::InitState() {
 		m_Ent1 = imp->ImportEntity("content/meshes/test/cube1.fbx");
 		e2 = imp->ImportEntity("content/meshes/test/cube2.fbx");
 	
+		m_S1 = imp->ImportSkeletal("test/test1.fbx");
 	m_Graph1 = new SceneGraph;
 
 	//m_Cam1 = m_Graph1->GetCamera();
@@ -29,8 +33,9 @@ void Test3D::InitState() {
 	m_Graph1->SetCamera(m_Cam1);
 
 	m_Graph1->AddNode((GraphNode*)m_Ent1);
-	m_Graph1->AddNode((GraphNode*)e2);
-
+//	m_Graph1->AddNode((GraphNode*)e2);
+//	m_Graph1->AddNode((GraphNode*)m_S1);
+	m_S1->SetScale(glm::vec3(0.02, 0.02, 0.02));
 	int b = 5;
 
 	m_Renderer = new SolarisRenderer;
@@ -38,12 +43,22 @@ void Test3D::InitState() {
 	m_Renderer->SetRenderGraph(m_Graph1);
 
 	m_Cam1->SetPosition(glm::vec3(0,3.5, 4));
-	e2->SetPosition(glm::vec3(0, 3, 0));
+	e2->SetPosition(glm::vec3(0, 3,-3));
 	auto l1 = new NodeLight;
 	m_Graph1->AddLight(l1);
 	l1->SetPosition(glm::vec3(0,3.5,4));
 	l1->SetRange(45);
 	m_Light1 = l1;
+	m_PS1 = new ParticleSystem;
+
+	m_Renderer->AddParticleSystem(m_PS1);
+
+	Particle* b_p1 = new Particle;
+	b_p1->m_Texture = new Texture2D("content/sprites/stars/star2.png",true);
+
+	m_PS1->AddBase(b_p1);
+
+
 
 	m_CR = new CubeRenderer(512);
 
@@ -66,11 +81,11 @@ void Test3D::UpdateState(float dt) {
 
 void Test3D::RenderState() {
 
-
+	m_PS1->Spawn(glm::vec3(0, 3, 0), 15);
 	
-
+	//m_PS1->Spawn(glm::vec3(0, 3, 0), 5);
 	//m_CR->RenderDepth(m_Renderer, m_Cam1->GetPosition(),50);
-
+	m_PS1->UpdateSystem();
 	m_Renderer->RenderShadowMaps();
 	m_Renderer->RenderScene();
 //	::vec3(ang,ang,ang));

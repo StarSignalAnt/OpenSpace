@@ -33,6 +33,7 @@ public:
 	void SetOther(Texture2D* other) {
 		m_OtherTexture = other;
 	}
+
 protected:
 
 	float4x4 m_World;

@@ -99,8 +99,11 @@ void Texture2D::ThreadTask() {
         // Add exit condition or logging as needed
    // }
     TextureLoadInfo loadInfo;
-    loadInfo.IsSRGB = false; // Changed from true to false to ensure linear RGB colors
-    loadInfo.PermultiplyAlpha = false;
+    loadInfo.IsSRGB =false; // Changed from true to false to ensure linear RGB colors
+    loadInfo.PermultiplyAlpha = true;
+    //loadInfo.
+
+
 
     RefCntAutoPtr<ITexture> Tex;
     CreateTextureFromFile(m_Path.c_str(), loadInfo, FutureApp::m_Inst->GetDevice(), &Tex);

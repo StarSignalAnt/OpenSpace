@@ -20,6 +20,10 @@ float MathsOps::RndFloat(float min, float max) {
 
 }
 
+int MathsOps::RndInt(int min, int max) {
+    return min + rand() % (max - min + 1);
+}
+
 float MathsOps::Deg2Rad(float deg) {
 
 	return deg * 3.14159265358979323846f / 180.0f;

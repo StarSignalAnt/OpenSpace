@@ -2,12 +2,14 @@
 #include <FutureState.h>
 
 class NodeEntity;
+class NodeSkeletalEntity;
 class SceneGraph;
 class NodeCamera;
 class SolarisRenderer;
 class NodeFPSCamera;
 class NodeLight;
 class CubeRenderer;
+class ParticleSystem;
 
 class Test3D :
     public FutureState
@@ -29,6 +31,8 @@ private:
 	NodeFPSCamera* m_FPSCam;
 	NodeLight* m_Light1;
 	CubeRenderer* m_CR;
+	NodeSkeletalEntity* m_S1;
+	ParticleSystem* m_PS1;
 
 };
 

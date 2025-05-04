@@ -79,6 +79,12 @@
     <Filter Include="Renderer">
       <UniqueIdentifier>{f8268563-ee73-4619-98aa-0404ecc17686}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{7dfa908e-ec8e-4675-a831-b62e76749e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material\Types">
+      <UniqueIdentifier>{37ce77b2-5b63-4759-b0c2-a139b069c8cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -288,9 +294,6 @@
     <ClInclude Include="GPBasic3D.h">
       <Filter>GP</Filter>
     </ClInclude>
-    <ClInclude Include="RenderMaterial.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GP3D.h">
       <Filter>GP</Filter>
     </ClInclude>
@@ -308,6 +311,45 @@
     </ClInclude>
     <ClInclude Include="NodeLight.h">
       <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Bone.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneInfo.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="MathsHelp.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSkeletalEntity.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="GPS3D.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="GPSDepth.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="GPParticle.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMaterial.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialBasic3D.h">
+      <Filter>Material\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialPBR3D.h">
+      <Filter>Material\Types</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -509,9 +551,6 @@
     <ClCompile Include="GPBasic3D.cpp">
       <Filter>GP</Filter>
     </ClCompile>
-    <ClCompile Include="RenderMaterial.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GP3D.cpp">
       <Filter>GP</Filter>
     </ClCompile>
@@ -529,6 +568,45 @@
     </ClCompile>
     <ClCompile Include="NodeLight.cpp">
       <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneInfo.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="MathsHelp.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSkeletalEntity.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="GPS3D.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="GPSDepth.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="GPParticle.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMaterial.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialBasic3D.cpp">
+      <Filter>Material\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialPBR3D.cpp">
+      <Filter>Material\Types</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
