@@ -6,10 +6,12 @@ class MaterialPBRS3D :
 public:
 
     MaterialPBRS3D();
+    MaterialPBRS3D(bool nothing);
+
     void InitPipeline() override;
     void Bind() override;
     void Render() override;
-   
+    RenderMaterial* Clone() override;
 
 };
 

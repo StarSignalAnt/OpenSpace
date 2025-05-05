@@ -7,10 +7,12 @@ public:
 
 
     MaterialDepth3D();
+    MaterialDepth3D(bool nothing);
 
     void InitPipeline() override;
     void Bind() override;
     void Render() override;
+    RenderMaterial* Clone() override;
 
 };
 

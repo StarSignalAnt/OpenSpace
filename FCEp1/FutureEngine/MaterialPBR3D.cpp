@@ -47,6 +47,13 @@ MaterialPBR3D::MaterialPBR3D() {
 
 }
 
+
+MaterialPBR3D::MaterialPBR3D(bool nothing) {
+
+
+
+}
+
 void MaterialPBR3D::InitPipeline() {
 
     auto ps = FutureApp::m_Inst->GetSwapChain();
@@ -265,5 +272,16 @@ void MaterialPBR3D::Render() {
     // Verify the state of vertex and index buffers
     DrawAttrs.Flags = DRAW_FLAG_VERIFY_ALL;
     FutureApp::m_Inst->GetContext()->DrawIndexed(DrawAttrs);
+
+}
+
+
+RenderMaterial* MaterialPBR3D::Clone() {
+
+    MaterialPBR3D* res = new MaterialPBR3D(false);
+    res->SetPipeline(GetPipeline());
+    res->SetConstants(GetConstants());
+    res->SetSRB(GetSRB());
+    return res;
 
 }

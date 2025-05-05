@@ -42,6 +42,12 @@ MaterialBasic3D::MaterialBasic3D() {
 
 }
 
+MaterialBasic3D::MaterialBasic3D(bool nothing) {
+
+
+
+}
+
 void MaterialBasic3D::InitPipeline() {
 
     auto ps = FutureApp::m_Inst->GetSwapChain();
@@ -249,5 +255,15 @@ void MaterialBasic3D::Render() {
     // Verify the state of vertex and index buffers
     DrawAttrs.Flags = DRAW_FLAG_VERIFY_ALL;
     FutureApp::m_Inst->GetContext()->DrawIndexed(DrawAttrs);
+
+}
+
+RenderMaterial* MaterialBasic3D::Clone() {
+
+    MaterialBasic3D* res = new MaterialBasic3D(false);
+    res->SetPipeline(GetPipeline());
+    res->SetConstants(GetConstants());
+    res->SetSRB(GetSRB());
+    return res;
 
 }

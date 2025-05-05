@@ -1,9 +1,15 @@
 ﻿  Scanning sources for module dependencies...
-  SolarisRenderer.cpp
-C:\project\FCEp1\FutureEngine\ParticleSystem.h(17,15): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'SolarisRenderer.cpp')
+  Importer.cpp
+C:\project\FCEp1\FutureEngine\Animation.h(47,10): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Importer.cpp')
   
-C:\project\FCEp1\FutureEngine\SolarisRenderer.cpp(504,50): warning C4267: '=': conversion from 'size_t' to 'Diligent::Uint32', possible loss of data
+C:\project\FCEp1\FutureEngine\Importer.cpp(151,22): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(179,23): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(185,26): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(201,26): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(260,23): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(335,23): warning C4018: '<': signed/unsigned mismatch
+C:\project\FCEp1\FutureEngine\Importer.cpp(354,23): warning C4018: '<': signed/unsigned mismatch
 Archiver_64d.lib(Archiver_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in glfw3dll.lib(glfw3.dll); second definition ignored
 DiligentCore.lib(ArchiverFactory.obj) : warning LNK4006: "struct Diligent::IArchiverFactory * __cdecl Diligent::GetArchiverFactory(void)" (?GetArchiverFactory@Diligent@@YAPEAUIArchiverFactory@1@XZ) already defined in Archiver_64d.lib(Archiver_64d.dll); second definition ignored
 DiligentCore.lib(Timer.obj) : warning LNK4006: "public: __cdecl Diligent::Timer::Timer(void)" (??0Timer@Diligent@@QEAA@XZ) already defined in Diligent-Common.lib(Timer.obj); second definition ignored

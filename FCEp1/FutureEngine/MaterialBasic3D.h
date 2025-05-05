@@ -6,11 +6,12 @@ class MaterialBasic3D :
 public:
 
     MaterialBasic3D();
+    MaterialBasic3D(bool nothing);
 
     void InitPipeline() override;
     void Bind() override;
     void Render() override;
-
+    RenderMaterial* Clone() override;
 
 
 };

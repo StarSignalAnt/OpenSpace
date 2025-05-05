@@ -52,6 +52,13 @@ MaterialDepthS3D::MaterialDepthS3D() {
 
 }
 
+
+MaterialDepthS3D::MaterialDepthS3D(bool nothing) {
+
+
+}
+
+
 void MaterialDepthS3D::InitPipeline() {
 
     auto ps = FutureApp::m_Inst->GetSwapChain();
@@ -274,5 +281,16 @@ void MaterialDepthS3D::Render() {
     // Verify the state of vertex and index buffers
     DrawAttrs.Flags = DRAW_FLAG_VERIFY_ALL;
     FutureApp::m_Inst->GetContext()->DrawIndexed(DrawAttrs);
+
+}
+
+
+RenderMaterial* MaterialDepthS3D::Clone() {
+
+    MaterialDepthS3D* res = new MaterialDepthS3D(false);
+    res->SetPipeline(GetPipeline());
+    res->SetConstants(GetConstants());
+    res->SetSRB(GetSRB());
+    return res;
 
 }

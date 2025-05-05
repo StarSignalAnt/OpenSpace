@@ -17,6 +17,7 @@
 #include <glm/gtx/transform.hpp>    
 #include "NodeSkeletalEntity.h"
 #include <iostream>
+#include "EngineProducer.h"
 #include <filesystem>
 #include "Animator.h"
 #include "Animation.h"
@@ -150,7 +151,10 @@ NodeEntity* Importer::ImportEntity(std::string path) {
     for (int i = 0;i < scene->mNumMaterials;i++) {
 
         auto mat = scene->mMaterials[i];
-        auto rmat = new MaterialPBR3D;
+        //auto rmat = new MaterialPBR3D;
+
+        auto rmat = EngineProducer::m_This->ProduceMaterial("MaterialPBR");
+
         aiString path;
         if (mat->GetTexture(aiTextureType_DIFFUSE, 0, &path) == AI_SUCCESS) {
             std::string texturePath = path.C_Str();
@@ -209,7 +213,7 @@ NodeEntity* Importer::ImportEntity(std::string path) {
         buf->Finalize();
         
         buf->SetMaterial(mats[mesh->mMaterialIndex]);
-        buf->SetDepthMaterial(new MaterialDepth3D);
+        buf->SetDepthMaterial(EngineProducer::m_This->ProduceMaterial("MaterialDepth"));
         meshes.push_back(buf);
 
 
@@ -258,7 +262,7 @@ NodeSkeletalEntity* Importer::ImportSkeletal(std::string path) {
         auto mat = scene->mMaterials[i];
         auto name = std::string(mat->GetName().C_Str());
 
-        auto v_mat = new MaterialPBRS3D;
+        auto v_mat = EngineProducer::m_This->ProduceMaterial("MaterialPBRS");
 
         std::string check = mat_path + name + ".material";
 
@@ -337,7 +341,7 @@ NodeSkeletalEntity* Importer::ImportSkeletal(std::string path) {
 
 
         mesh->SetMaterial(materials[scene->mMeshes[i]->mMaterialIndex]);
-        mesh->SetDepthMaterial(new MaterialDepthS3D);
+        mesh->SetDepthMaterial(EngineProducer::m_This->ProduceMaterial("MaterialDepths"));
         //mesh->SetDepthMaterial(new MaterialActorDepth);
 
 

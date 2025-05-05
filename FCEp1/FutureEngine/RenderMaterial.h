@@ -50,8 +50,31 @@ public:
 	void SetBoneMatrix(float4x4 matrix, int index);
 	void SetShadow(RenderTargetCube* cube);
 
+	virtual RenderMaterial* Clone() = 0;
+
 	virtual void Bind() = 0;
 	virtual void Render() = 0;
+	RefCntAutoPtr<IPipelineState> GetPipeline() {
+		return m_pPSO;
+	}
+	RefCntAutoPtr<IBuffer> GetConstants() {
+		return m_Constants;
+	}
+	RefCntAutoPtr<IShaderResourceBinding> GetSRB() {
+		return m_SRB;
+	}
+	void SetPipeline(RefCntAutoPtr<IPipelineState> pipeline) {
+		m_pPSO = pipeline;
+	}
+	void SetConstants(RefCntAutoPtr<IBuffer> constants)
+	{
+		m_Constants = constants;
+	}
+	void SetSRB(RefCntAutoPtr<IShaderResourceBinding> srb)
+	{
+		m_SRB = srb;
+	}
+
 
 protected:
 

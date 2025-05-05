@@ -360,6 +360,9 @@
     <ClInclude Include="MaterialDepthS3D.h">
       <Filter>Material\Types</Filter>
     </ClInclude>
+    <ClInclude Include="EngineProducer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FutureEngine.cpp">
@@ -625,6 +628,9 @@
     </ClCompile>
     <ClCompile Include="MaterialDepthS3D.cpp">
       <Filter>Material\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineProducer.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

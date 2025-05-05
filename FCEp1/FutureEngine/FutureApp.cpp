@@ -9,6 +9,7 @@
 #include "SoundLib.h"
 #include "RenderTargetCube.h"
 #include "Texture2D.h"
+#include "EngineProducer.h"
 
 
 #ifndef ENGINE_DLL
@@ -227,6 +228,8 @@ int FutureApp::Run()
 
     m_WhiteTex = new Texture2D("engine/maps/white.png");
     m_NormBlankTex = new Texture2D("engine/maps/blanknormal.png");
+
+    EngineProducer* producer = new EngineProducer;
 
     // Render loop
     while (!glfwWindowShouldClose(window)) {
