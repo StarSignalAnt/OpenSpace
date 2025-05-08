@@ -188,6 +188,9 @@
     <ClInclude Include="GameVideo.h" />
     <ClInclude Include="GP3D.h" />
     <ClInclude Include="GPBasic3D.h" />
+    <ClInclude Include="GPBlur.h" />
+    <ClInclude Include="GPColorLimit.h" />
+    <ClInclude Include="GPCombine.h" />
     <ClInclude Include="GPDepth.h" />
     <ClInclude Include="GPMap2D.h" />
     <ClInclude Include="GPParticle.h" />
@@ -242,6 +245,9 @@
     <ClInclude Include="NodeSkeletalEntity.h" />
     <ClInclude Include="ParticleSystem.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PostProcess.h" />
+    <ClInclude Include="PostProcessing.h" />
+    <ClInclude Include="PPBloom.h" />
     <ClInclude Include="RenderMaterial.h" />
     <ClInclude Include="RenderTarget2D.h" />
     <ClInclude Include="RenderTargetCube.h" />
@@ -282,6 +288,9 @@
     <ClCompile Include="GameVideo.cpp" />
     <ClCompile Include="GP3D.cpp" />
     <ClCompile Include="GPBasic3D.cpp" />
+    <ClCompile Include="GPBlur.cpp" />
+    <ClCompile Include="GPColorLimit.cpp" />
+    <ClCompile Include="GPCombine.cpp" />
     <ClCompile Include="GPDepth.cpp" />
     <ClCompile Include="GPMap2D.cpp" />
     <ClCompile Include="GPParticle.cpp" />
@@ -337,6 +346,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PostProcess.cpp" />
+    <ClCompile Include="PostProcessing.cpp" />
+    <ClCompile Include="PPBloom.cpp" />
     <ClCompile Include="RenderMaterial.cpp" />
     <ClCompile Include="RenderTarget2D.cpp" />
     <ClCompile Include="RenderTargetCube.cpp" />

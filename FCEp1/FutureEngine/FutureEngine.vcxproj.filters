@@ -85,6 +85,12 @@
     <Filter Include="Material\Types">
       <UniqueIdentifier>{37ce77b2-5b63-4759-b0c2-a139b069c8cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PostProcess">
+      <UniqueIdentifier>{bcc8ef4c-5fda-49aa-948f-b26e6eff7178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcess\Processes">
+      <UniqueIdentifier>{f45531c2-feca-44d8-abfd-b0e0c5483738}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -363,6 +369,24 @@
     <ClInclude Include="EngineProducer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PostProcessing.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcess.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PPBloom.h">
+      <Filter>PostProcess\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="GPColorLimit.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="GPBlur.h">
+      <Filter>GP</Filter>
+    </ClInclude>
+    <ClInclude Include="GPCombine.h">
+      <Filter>GP</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FutureEngine.cpp">
@@ -631,6 +655,24 @@
     </ClCompile>
     <ClCompile Include="EngineProducer.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessing.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PPBloom.cpp">
+      <Filter>PostProcess\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="GPColorLimit.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="GPBlur.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="GPCombine.cpp">
+      <Filter>GP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

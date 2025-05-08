@@ -1,15 +1,15 @@
 ﻿  Scanning sources for module dependencies...
-  Importer.cpp
-C:\project\FCEp1\FutureEngine\Animation.h(47,10): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Importer.cpp')
-  
-C:\project\FCEp1\FutureEngine\Importer.cpp(151,22): warning C4018: '<': signed/unsigned mismatch
-C:\project\FCEp1\FutureEngine\Importer.cpp(179,23): warning C4018: '<': signed/unsigned mismatch
-C:\project\FCEp1\FutureEngine\Importer.cpp(185,26): warning C4018: '<': signed/unsigned mismatch
-C:\project\FCEp1\FutureEngine\Importer.cpp(201,26): warning C4018: '<': signed/unsigned mismatch
-C:\project\FCEp1\FutureEngine\Importer.cpp(260,23): warning C4018: '<': signed/unsigned mismatch
-C:\project\FCEp1\FutureEngine\Importer.cpp(335,23): warning C4018: '<': signed/unsigned mismatch
-C:\project\FCEp1\FutureEngine\Importer.cpp(354,23): warning C4018: '<': signed/unsigned mismatch
+  GPColorLimit.cpp
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:         with
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:         [
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:             T=float
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:         ]
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:         with
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:         [
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:             T=float
+C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:         ]
 Archiver_64d.lib(Archiver_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in glfw3dll.lib(glfw3.dll); second definition ignored
 DiligentCore.lib(ArchiverFactory.obj) : warning LNK4006: "struct Diligent::IArchiverFactory * __cdecl Diligent::GetArchiverFactory(void)" (?GetArchiverFactory@Diligent@@YAPEAUIArchiverFactory@1@XZ) already defined in Archiver_64d.lib(Archiver_64d.dll); second definition ignored
 DiligentCore.lib(Timer.obj) : warning LNK4006: "public: __cdecl Diligent::Timer::Timer(void)" (??0Timer@Diligent@@QEAA@XZ) already defined in Diligent-Common.lib(Timer.obj); second definition ignored

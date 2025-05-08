@@ -10,6 +10,9 @@ class NodeFPSCamera;
 class NodeLight;
 class CubeRenderer;
 class ParticleSystem;
+class PostProcessing;
+class RenderTarget2D;
+class PPBloom;
 
 class Test3D :
     public FutureState
@@ -33,6 +36,9 @@ private:
 	CubeRenderer* m_CR;
 	NodeSkeletalEntity* m_S1;
 	ParticleSystem* m_PS1;
+	PostProcessing* m_PP;
+	PPBloom* m_Bloom;
+	RenderTarget2D* m_RT1;
 
 };
 

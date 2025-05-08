@@ -3,6 +3,7 @@
 #include <string>
 
 class Texture2D;
+class GraphicsPipeline;
 
 class UIHelp
 {
@@ -12,6 +13,8 @@ public:
 	static void InitHelp();
 	static void DrawImageBlur(glm::vec2 pos, glm::vec2 size, Texture2D* image, glm::vec4 color, float blur = 0.1);
 	static void DrawImage(glm::vec2 pos, glm::vec2 size, Texture2D* image,glm::vec4 color);
+	static void DrawImage2(glm::vec2 pos, glm::vec2 size, Texture2D* image,Texture2D* image2, glm::vec4 color);
+
 	static void DrawImage(glm::vec2 pos, glm::vec2 size, Texture2D* image, glm::vec4 color, float rot, float scale);
 	static void DrawRect(glm::vec2 pos, glm::vec2 size, glm::vec4 color);
 	static void DrawOutlineRect(glm::vec2 pos, glm::vec2 size, glm::vec4 color);
@@ -23,6 +26,11 @@ public:
 	static void ClearZ();
 	static void Begin();
 	static void End();
+	static void SetPipeline(GraphicsPipeline* pipe);
+	static void DefaultPipeline();
+
+	static GraphicsPipeline* m_DefGP;
+
 	static glm::vec4 m_Scissor;
 
 };

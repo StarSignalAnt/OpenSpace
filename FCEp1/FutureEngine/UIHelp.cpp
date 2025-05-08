@@ -14,10 +14,18 @@ Texture2D* m_RectTex;
 Texture2D* m_ColorBG;
 glm::vec4 UIHelp::m_Scissor;
 
+GraphicsPipeline* UIHelp::m_DefGP = nullptr;
+
+
+
+void UIHelp::DefaultPipeline() {
+	m_Draw->SetPipeline(m_DefGP);
+}
 
 void UIHelp::InitHelp() {
 
 	m_Draw = new SmartDraw;
+	m_DefGP = m_Draw->GetPipeline();
 	m_UIFont = new GameFont("engine/ui/uifont.ttf",16);
 	m_FontDraw = new SmartDraw;
 	m_BlurDraw = new SmartDraw;
@@ -27,6 +35,13 @@ void UIHelp::InitHelp() {
 	m_RectTex = new Texture2D("engine/ui/rect.png");
 	m_ColorBG = new Texture2D("engine/ui/colorBG6.jpg");
 	m_Scissor = glm::vec4(0, 0, FutureApp::m_Inst->GetWidth(), FutureApp::m_Inst->GetHeight()/2);
+
+}
+
+void UIHelp::SetPipeline(GraphicsPipeline* pipe) {
+
+
+	m_Draw->SetPipeline(pipe);
 
 }
 
@@ -57,6 +72,20 @@ void UIHelp::DrawImage(glm::vec2 position, glm::vec2 size, Texture2D* texture, g
 	inf->SetView(m_Scissor);
 	
 //	m_Draw->End();
+
+}
+
+void UIHelp::DrawImage2(glm::vec2 position, glm::vec2 size, Texture2D* texture,Texture2D* tex2, glm::vec4 color)
+{
+	//	glEnable(GL_BLEND);
+	//	glClear(GL_DEPTH_BUFFER_BIT);
+	//	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		//m_Draw->Begin();
+	auto inf = m_Draw->DrawDirect(position, size, color, texture);
+	inf->SetView(m_Scissor);
+	inf->SetNormalTexture(tex2);
+
+	//	m_Draw->End();
 
 }
 

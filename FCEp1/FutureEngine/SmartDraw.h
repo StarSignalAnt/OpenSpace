@@ -25,6 +25,9 @@ public:
 	{
 		m_Pipeline = pipeline;
 	}
+	GraphicsPipeline* GetPipeline() {
+		return m_Pipeline;
+	}
 	void SetPitch(float pitch)
 	{
 		m_Pitch = pitch;

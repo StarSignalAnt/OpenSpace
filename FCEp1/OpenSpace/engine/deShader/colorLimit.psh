@@ -1,0 +1,62 @@
+Texture2D    g_Texture;
+SamplerState g_Texture_sampler; // By convention, texture samplers must use the '_sampler' suffix
+
+struct PSInput
+{
+    float4 Pos      : SV_POSITION;  // Transformed position, mandatory
+    float2 UV       : TEXCOORD0;    // Texture coordinates
+    float4 Color    : COLOR0;       // Vertex color
+    float3 RealPos  : TEXCOORD1;    // World position or some custom 3D value
+    float4 Extra    : TEXCOORD2;    // Custom data (e.g. lighting, effects, etc.)
+    float4 View     : TEXCOORD3;    // View vector or any custom value
+    float4 Limit : TEXCOORD4;
+};
+
+struct PSOutput
+{
+    float4 Color : SV_TARGET;
+};
+
+// Note that if separate shader objects are not supported (this is only the case for old GLES3.0 devices), vertex
+// shader output variable name must match exactly the name of the pixel shader input variable.
+// If the variable has structure type (like in this example), the structure declarations must also be identical.
+void main(in  PSInput  PSIn,
+          out PSOutput PSOut)
+{
+
+    float2 spos = PSIn.Pos.xy;
+
+    if(spos.x<PSIn.View.x || spos.x>PSIn.View.x+PSIn.View.z || spos.y<PSIn.View.y || spos.y>PSIn.View.y+PSIn.View.w)
+    {
+
+        clip(-1);
+        return;
+
+    }
+
+   float4 Color = g_Texture.Sample(g_Texture_sampler, PSIn.UV)*PSIn.Color;
+
+    float tv = Color.r+Color.g+Color.b;
+    tv = tv /3.0;
+
+    if(tv>PSIn.Limit.x){
+
+        PSOut.Color = Color*2;
+        return;
+
+    }else{
+
+        PSOut.Color = float4(0,0,0,0);
+        return;
+
+    }
+
+        PSOut.Color = Color;
+
+
+}
+
+
+
+
+

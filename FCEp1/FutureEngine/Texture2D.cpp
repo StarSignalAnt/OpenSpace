@@ -171,6 +171,7 @@ Texture2D::Texture2D(ITexture* pTexture, ITextureView* pTextureView)
 
     // Mark this as an internal texture (no file path)
     m_Path = "internal_texture";
+    m_Loaded = true;
 }
 
 Texture2D::Texture2D(int w, int h)

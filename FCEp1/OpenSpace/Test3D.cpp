@@ -14,6 +14,9 @@
 #include "NodeSkeletalEntity.h"
 #include "ParticleSystem.h"
 #include "Texture2D.h"
+#include "PostProcessing.h"
+#include "PPBloom.h"
+#include "RenderTarget2D.h"
 
 void Test3D::InitState() {
 
@@ -58,9 +61,11 @@ void Test3D::InitState() {
 
 	m_PS1->AddBase(b_p1);
 
-
+	m_Bloom = new PPBloom;
 
 	m_CR = new CubeRenderer(512);
+
+	m_RT1 = new RenderTarget2D(FutureApp::m_Inst->GetWidth(), FutureApp::m_Inst->GetHeight());
 
 }
 
@@ -87,9 +92,20 @@ void Test3D::RenderState() {
 	//m_CR->RenderDepth(m_Renderer, m_Cam1->GetPosition(),50);
 	m_PS1->UpdateSystem();
 	m_Renderer->RenderShadowMaps();
+
+
+	m_RT1->Bind();
+	m_RT1->Clear(glm::vec3(0, 0, 0));
+	m_RT1->ClearZ();
+
 	m_Renderer->RenderScene();
-//	::vec3(ang,ang,ang));
+	m_RT1->Unbind();
+
+	
+	m_Bloom->Process(m_RT1);
+	//	::vec3(ang,ang,ang));
 }
+
 
 
 void Test3D::EndState() {
