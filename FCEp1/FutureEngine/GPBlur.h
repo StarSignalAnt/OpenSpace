@@ -11,6 +11,11 @@ public:
 	void Bind(MeshBuffer* buffer, Texture2D* texture) override;
 	void Render() override;
 	void Render(MeshBuffer* buffer) override;
+	void SetBlurFactor(float blur);
+
+
+	float m_BlurFactor = 0.1;
+
 
 };
 

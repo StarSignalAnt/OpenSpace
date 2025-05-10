@@ -387,6 +387,12 @@
     <ClInclude Include="GPCombine.h">
       <Filter>GP</Filter>
     </ClInclude>
+    <ClInclude Include="PPDOF.h">
+      <Filter>PostProcess\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="GPDOF.h">
+      <Filter>GP</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FutureEngine.cpp">
@@ -672,6 +678,12 @@
       <Filter>GP</Filter>
     </ClCompile>
     <ClCompile Include="GPCombine.cpp">
+      <Filter>GP</Filter>
+    </ClCompile>
+    <ClCompile Include="PPDOF.cpp">
+      <Filter>PostProcess\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="GPDOF.cpp">
       <Filter>GP</Filter>
     </ClCompile>
   </ItemGroup>

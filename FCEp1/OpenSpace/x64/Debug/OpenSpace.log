@@ -1,4 +1,19 @@
-﻿FutureEngine.lib(ftinit.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftinit.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
+﻿  Test3D.cpp
+C:\git\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(1404,16): warning C4099: 'GLFWwindow': type name first seen using 'class' now seen using 'struct'
+  (compiling source file 'Test3D.cpp')
+      C:\project\FCEp1\FutureEngine\FutureApp.h(13,7):
+      see declaration of 'GLFWwindow'
+  
+C:\project\FCEp1\FutureEngine\ParticleSystem.h(17,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'Test3D.cpp')
+  
+C:\project\FCEp1\FutureEngine\PPBloom.h(23,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'Test3D.cpp')
+  
+C:\project\FCEp1\FutureEngine\PPDOF.h(22,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'Test3D.cpp')
+  
+FutureEngine.lib(ftinit.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftinit.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
 FutureEngine.lib(ftbase.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(ftbase.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
 FutureEngine.lib(autofit.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(autofit.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info
 FutureEngine.lib(truetype.obj) : warning LNK4099: PDB 'freetype.pdb' was not found with 'FutureEngine.lib(truetype.obj)' or at 'C:\project\FCEp1\FutureEngine\x64\Debug\freetype.pdb'; linking object as if no debug info

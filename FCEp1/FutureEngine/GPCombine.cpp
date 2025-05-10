@@ -9,7 +9,7 @@
 struct CombineConstants {
 
     float4x4 mvp;
-    float4 blur;
+    float4 combine;
 
 };
 
@@ -197,7 +197,7 @@ void GPCombine::Bind() {
     {
         MapHelper<CombineConstants> CBConstants(FutureApp::m_Inst->GetContext(), m_Constants, MAP_WRITE, MAP_FLAG_DISCARD);
         CBConstants[0].mvp = m_World;
-        CBConstants[0].blur = float4(0.1, 0, 0, 0);
+        CBConstants[0].combine = float4(m_Combine1, m_Combine2, 0, 0);
 
 
     }
@@ -214,7 +214,7 @@ void GPCombine::Bind(MeshBuffer* buffer, Texture2D* texture) {
     {
         MapHelper<CombineConstants> CBConstants(FutureApp::m_Inst->GetContext(), m_Constants, MAP_WRITE, MAP_FLAG_DISCARD);
         CBConstants[0].mvp = m_World;
-        CBConstants[0].blur = float4(0.1, 0, 0, 0);
+        CBConstants[0].combine = float4(m_Combine1, m_Combine2, 0, 0);
     }
 
     const Uint64 offset = 0;
@@ -259,3 +259,12 @@ void GPCombine::Render(MeshBuffer* buffer) {
 
 
 }
+
+void GPCombine::SetCombine(float f1, float f2)
+{
+
+    m_Combine1 = f1;
+    m_Combine2 = f2;
+
+}
+

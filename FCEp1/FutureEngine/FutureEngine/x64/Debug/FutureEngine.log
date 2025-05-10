@@ -1,15 +1,32 @@
 ﻿  Scanning sources for module dependencies...
-  GPColorLimit.cpp
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:         with
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:         [
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:             T=float
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(198,39): warning C4305:         ]
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:         with
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:         [
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:             T=float
-C:\project\FCEp1\FutureEngine\GPColorLimit.cpp(215,39): warning C4305:         ]
+  CubeRenderer.cpp
+  GP3D.cpp
+  GPDOF.cpp
+C:\project\FCEp1\FutureEngine\GPDOF.cpp(217,43): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\project\FCEp1\FutureEngine\GPDOF.cpp(217,43): warning C4305:         with
+C:\project\FCEp1\FutureEngine\GPDOF.cpp(217,43): warning C4305:         [
+C:\project\FCEp1\FutureEngine\GPDOF.cpp(217,43): warning C4305:             T=float
+C:\project\FCEp1\FutureEngine\GPDOF.cpp(217,43): warning C4305:         ]
+  GPDepth.cpp
+  GPParticle.cpp
+  GPS3D.cpp
+  GPSDepth.cpp
+  MaterialDepth3D.cpp
+  MaterialDepthS3D.cpp
+  MaterialPBR3D.cpp
+  MaterialPBRS3D.cpp
+  NodeCamera.cpp
+C:\project\FCEp1\FutureEngine\NodeCamera.cpp(7,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\project\FCEp1\FutureEngine\NodeCamera.cpp(8,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  NodeFPSCamera.cpp
+  RenderMaterial.cpp
+  SceneGraph.cpp
+  SolarisRenderer.cpp
+C:\project\FCEp1\FutureEngine\ParticleSystem.h(17,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'SolarisRenderer.cpp')
+  
+C:\project\FCEp1\FutureEngine\SolarisRenderer.cpp(504,50): warning C4267: '=': conversion from 'size_t' to 'Diligent::Uint32', possible loss of data
+  Generating Code...
 Archiver_64d.lib(Archiver_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in glfw3dll.lib(glfw3.dll); second definition ignored
 DiligentCore.lib(ArchiverFactory.obj) : warning LNK4006: "struct Diligent::IArchiverFactory * __cdecl Diligent::GetArchiverFactory(void)" (?GetArchiverFactory@Diligent@@YAPEAUIArchiverFactory@1@XZ) already defined in Archiver_64d.lib(Archiver_64d.dll); second definition ignored
 DiligentCore.lib(Timer.obj) : warning LNK4006: "public: __cdecl Diligent::Timer::Timer(void)" (??0Timer@Diligent@@QEAA@XZ) already defined in Diligent-Common.lib(Timer.obj); second definition ignored

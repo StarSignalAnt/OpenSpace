@@ -212,7 +212,7 @@ void GPBlur::Bind(MeshBuffer* buffer, Texture2D* texture) {
     {
         MapHelper<BlurConstants> CBConstants(FutureApp::m_Inst->GetContext(), m_Constants, MAP_WRITE, MAP_FLAG_DISCARD);
         CBConstants[0].mvp = m_World;
-        CBConstants[0].blur = float4(0.1, 0, 0, 0);
+        CBConstants[0].blur = float4(m_BlurFactor, 0, 0, 0);
     }
 
     const Uint64 offset = 0;
@@ -255,5 +255,11 @@ void GPBlur::Render(MeshBuffer* buffer) {
     DrawAttrs.Flags = DRAW_FLAG_VERIFY_ALL;
     FutureApp::m_Inst->GetContext()->DrawIndexed(DrawAttrs);
 
+
+}
+
+void GPBlur::SetBlurFactor(float factor) {
+
+    m_BlurFactor = factor;
 
 }

@@ -16,6 +16,7 @@
 #include "Texture2D.h"
 #include "PostProcessing.h"
 #include "PPBloom.h"
+#include "PPDOF.h"
 #include "RenderTarget2D.h"
 
 void Test3D::InitState() {
@@ -62,6 +63,8 @@ void Test3D::InitState() {
 	m_PS1->AddBase(b_p1);
 
 	m_Bloom = new PPBloom;
+	m_DOF = new PPDOF;
+	m_DOF->SetRenderer(m_Renderer);
 
 	m_CR = new CubeRenderer(512);
 
@@ -101,8 +104,9 @@ void Test3D::RenderState() {
 	m_Renderer->RenderScene();
 	m_RT1->Unbind();
 
-	
-	m_Bloom->Process(m_RT1);
+
+	m_DOF->Process(m_RT1);
+	//m_Bloom->Process(m_RT1);
 	//	::vec3(ang,ang,ang));
 }
 

@@ -3,24 +3,50 @@
   "WorkspaceRootPath": "C:\\project\\FCEp1\\FutureEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPColorLimit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\NodeCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:NodeCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPColorLimit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPDOF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPDOF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PostProcess.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PostProcess.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PPDOF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PPDOF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPCombine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPCombine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PostProcess.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PostProcess.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PostProcess.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PostProcess.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\UIHelp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:UIHelp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\FutureApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:FutureApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AADE5B-257E-4935-A733-C0BF404272C9}|..\\OpenSpace\\OpenSpace.vcxproj|C:\\project\\FCEp1\\OpenSpace\\Test3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PPBloom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -29,6 +55,45 @@
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PPBloom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PPBloom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPDOF.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPDOF.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PPDOF.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PPDOF.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPCombine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPCombine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPBlur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPBlur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPColorLimit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PostProcess.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:PostProcess.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:SolarisRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AADE5B-257E-4935-A733-C0BF404272C9}|..\\OpenSpace\\OpenSpace.vcxproj|C:\\project\\FCEp1\\OpenSpace\\Test3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPBlur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPBlur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPColorLimit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -43,39 +108,12 @@
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GraphicsPipeline.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\UIHelp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:UIHelp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\UIHelp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:UIHelp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPCombine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPCombine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPBlur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPBlur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPBlur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPBlur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GP3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GP3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\FutureApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:FutureApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09AADE5B-257E-4935-A733-C0BF404272C9}|..\\OpenSpace\\OpenSpace.vcxproj|C:\\project\\FCEp1\\OpenSpace\\Test3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\SmartDraw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -98,18 +136,11 @@
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:GPSmartDraw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:RenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.35112\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09AADE5B-257E-4935-A733-C0BF404272C9}|..\\OpenSpace\\OpenSpace.vcxproj|C:\\project\\FCEp1\\OpenSpace\\Test3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\PostProcessing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -180,10 +211,6 @@
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:FutureApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:SolarisRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:SolarisRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -198,10 +225,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\RenderMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:RenderMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|solutionrelative:Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\GPS3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -233,9 +256,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{09AADE5B-257E-4935-A733-C0BF404272C9}|..\\OpenSpace\\OpenSpace.vcxproj|C:\\project\\FCEp1\\OpenSpace\\Starfield.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A696EC7-A942-47C5-AA0A-FE0105009827}|FutureEngine.vcxproj|C:\\project\\FCEp1\\FutureEngine\\Importer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -403,7 +423,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 51,
+          "SelectedChildIndex": 42,
           "Children": [
             {
               "$type": "Bookmark",
@@ -575,202 +595,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GPCombine.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.cpp",
-              "RelativeDocumentMoniker": "GPCombine.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.cpp",
-              "RelativeToolTip": "GPCombine.cpp",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAWwN0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T15:09:19.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UIHelp.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.cpp",
-              "RelativeDocumentMoniker": "UIHelp.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.cpp",
-              "RelativeToolTip": "UIHelp.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAWwFUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T13:43:28.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PPBloom.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.cpp",
-              "RelativeDocumentMoniker": "PPBloom.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.cpp",
-              "RelativeToolTip": "PPBloom.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T13:16:54.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SmartDraw.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SmartDraw.cpp",
-              "RelativeDocumentMoniker": "SmartDraw.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\SmartDraw.cpp",
-              "RelativeToolTip": "SmartDraw.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T13:01:59.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GraphicsPipeline.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.h",
-              "RelativeDocumentMoniker": "GraphicsPipeline.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.h",
-              "RelativeToolTip": "GraphicsPipeline.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T12:41:47.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PPBloom.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.h",
-              "RelativeDocumentMoniker": "PPBloom.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.h",
-              "RelativeToolTip": "PPBloom.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T13:15:48.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PostProcess.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.cpp",
-              "RelativeDocumentMoniker": "PostProcess.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.cpp",
-              "RelativeToolTip": "PostProcess.cpp",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T13:14:13.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PostProcess.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.h",
-              "RelativeDocumentMoniker": "PostProcess.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.h",
-              "RelativeToolTip": "PostProcess.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T13:13:01.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GPColorLimit.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.h",
-              "RelativeDocumentMoniker": "GPColorLimit.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.h",
-              "RelativeToolTip": "GPColorLimit.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T13:56:25.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GPColorLimit.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.cpp",
-              "RelativeDocumentMoniker": "GPColorLimit.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.cpp",
-              "RelativeToolTip": "GPColorLimit.cpp",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAmwOIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T13:57:15.34Z",
+              "Title": "NodeCamera.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeCamera.h",
+              "RelativeDocumentMoniker": "NodeCamera.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\NodeCamera.h*",
+              "RelativeToolTip": "NodeCamera.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-10T15:31:47.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UIHelp.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.h",
-              "RelativeDocumentMoniker": "UIHelp.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.h",
-              "RelativeToolTip": "UIHelp.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T14:05:10.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GPBlur.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPBlur.h",
-              "RelativeDocumentMoniker": "GPBlur.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPBlur.h",
-              "RelativeToolTip": "GPBlur.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T14:45:30.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GPCombine.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.h",
-              "RelativeDocumentMoniker": "GPCombine.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.h",
-              "RelativeToolTip": "GPCombine.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T15:08:42.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GraphicsPipeline.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.cpp",
-              "RelativeDocumentMoniker": "GraphicsPipeline.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.cpp",
-              "RelativeToolTip": "GraphicsPipeline.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Test3D.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\Test3D.cpp",
+              "RelativeDocumentMoniker": "..\\OpenSpace\\Test3D.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\OpenSpace\\Test3D.cpp",
+              "RelativeToolTip": "..\\OpenSpace\\Test3D.cpp",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAWwGsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T15:15:50.059Z",
+              "WhenOpened": "2025-04-29T11:43:32.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RenderTarget2D.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.cpp",
+              "RelativeDocumentMoniker": "RenderTarget2D.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.cpp",
+              "RelativeToolTip": "RenderTarget2D.cpp",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAgwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-30T09:04:14.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "GPMap2D.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPMap2D.h",
-              "RelativeDocumentMoniker": "GPMap2D.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPMap2D.h",
-              "RelativeToolTip": "GPMap2D.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T12:28:47.457Z",
+              "Title": "SolarisRenderer.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.cpp",
+              "RelativeDocumentMoniker": "SolarisRenderer.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.cpp",
+              "RelativeToolTip": "SolarisRenderer.cpp",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T11:42:31.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
+              "Title": "RefCntAutoPtr.hpp",
+              "DocumentMoniker": "C:\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "ToolTip": "C:\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "RelativeToolTip": "..\\..\\..\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAgwKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-04T14:41:22.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Texture2D.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.cpp",
+              "RelativeDocumentMoniker": "Texture2D.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.cpp",
+              "RelativeToolTip": "Texture2D.cpp",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-01T10:03:50.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FutureApp.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\FutureApp.cpp",
               "RelativeDocumentMoniker": "FutureApp.cpp",
@@ -783,20 +686,288 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UIHelp.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.cpp",
+              "RelativeDocumentMoniker": "UIHelp.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.cpp",
+              "RelativeToolTip": "UIHelp.cpp",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T13:43:28.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GPDOF.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPDOF.cpp",
+              "RelativeDocumentMoniker": "GPDOF.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPDOF.cpp*",
+              "RelativeToolTip": "GPDOF.cpp*",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAgwNgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-10T14:59:49.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GPCombine.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.cpp",
+              "RelativeDocumentMoniker": "GPCombine.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.cpp",
+              "RelativeToolTip": "GPCombine.cpp",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAWwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T15:09:19.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PPDOF.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PPDOF.cpp",
+              "RelativeDocumentMoniker": "PPDOF.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PPDOF.cpp",
+              "RelativeToolTip": "PPDOF.cpp",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwCcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-10T14:49:30.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostProcess.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.cpp",
+              "RelativeDocumentMoniker": "PostProcess.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.cpp",
+              "RelativeToolTip": "PostProcess.cpp",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T13:14:13.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "PPBloom.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.h",
+              "RelativeDocumentMoniker": "PPBloom.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.h",
+              "RelativeToolTip": "PPBloom.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T13:15:48.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PPBloom.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.cpp",
+              "RelativeDocumentMoniker": "PPBloom.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PPBloom.cpp",
+              "RelativeToolTip": "PPBloom.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T13:16:54.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PPDOF.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PPDOF.h",
+              "RelativeDocumentMoniker": "PPDOF.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PPDOF.h",
+              "RelativeToolTip": "PPDOF.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-10T14:48:55.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Texture2D.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.h",
+              "RelativeDocumentMoniker": "Texture2D.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.h",
+              "RelativeToolTip": "Texture2D.h",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-01T09:46:18.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GPColorLimit.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.h",
+              "RelativeDocumentMoniker": "GPColorLimit.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.h",
+              "RelativeToolTip": "GPColorLimit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T13:56:25.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PostProcess.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.h",
+              "RelativeDocumentMoniker": "PostProcess.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\PostProcess.h",
+              "RelativeToolTip": "PostProcess.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T13:13:01.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GPCombine.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.h",
+              "RelativeDocumentMoniker": "GPCombine.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPCombine.h",
+              "RelativeToolTip": "GPCombine.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T15:08:42.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "GPBlur.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPBlur.cpp",
               "RelativeDocumentMoniker": "GPBlur.cpp",
               "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPBlur.cpp",
               "RelativeToolTip": "GPBlur.cpp",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAmwAMBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAmwAkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-08T14:46:01.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
+              "Title": "GPDOF.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPDOF.h",
+              "RelativeDocumentMoniker": "GPDOF.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPDOF.h",
+              "RelativeToolTip": "GPDOF.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-10T14:59:29.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Test3D.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\Test3D.h",
+              "RelativeDocumentMoniker": "..\\OpenSpace\\Test3D.h",
+              "ToolTip": "C:\\project\\FCEp1\\OpenSpace\\Test3D.h",
+              "RelativeToolTip": "..\\OpenSpace\\Test3D.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T11:43:12.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GPBlur.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPBlur.h",
+              "RelativeDocumentMoniker": "GPBlur.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPBlur.h",
+              "RelativeToolTip": "GPBlur.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T14:45:30.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GPColorLimit.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.cpp",
+              "RelativeDocumentMoniker": "GPColorLimit.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPColorLimit.cpp",
+              "RelativeToolTip": "GPColorLimit.cpp",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAmwNgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T13:57:15.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GraphicsPipeline.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.h",
+              "RelativeDocumentMoniker": "GraphicsPipeline.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.h",
+              "RelativeToolTip": "GraphicsPipeline.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T12:41:47.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SmartDraw.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SmartDraw.cpp",
+              "RelativeDocumentMoniker": "SmartDraw.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\SmartDraw.cpp",
+              "RelativeToolTip": "SmartDraw.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T13:01:59.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UIHelp.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.h",
+              "RelativeDocumentMoniker": "UIHelp.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\UIHelp.h",
+              "RelativeToolTip": "UIHelp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T14:05:10.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GraphicsPipeline.cpp",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.cpp",
+              "RelativeDocumentMoniker": "GraphicsPipeline.cpp",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GraphicsPipeline.cpp",
+              "RelativeToolTip": "GraphicsPipeline.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T15:15:50.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GPMap2D.h",
+              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPMap2D.h",
+              "RelativeDocumentMoniker": "GPMap2D.h",
+              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\GPMap2D.h",
+              "RelativeToolTip": "GPMap2D.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T12:28:47.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "GP3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GP3D.cpp",
               "RelativeDocumentMoniker": "GP3D.cpp",
@@ -804,38 +975,11 @@
               "RelativeToolTip": "GP3D.cpp",
               "ViewState": "AgIAAOMAAAAAAAAAAAAmwAUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T14:08:04.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T14:08:04.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Test3D.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\Test3D.cpp",
-              "RelativeDocumentMoniker": "..\\OpenSpace\\Test3D.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\OpenSpace\\Test3D.cpp",
-              "RelativeToolTip": "..\\OpenSpace\\Test3D.cpp",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAmwGgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T11:43:32.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RenderTarget2D.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.cpp",
-              "RelativeDocumentMoniker": "RenderTarget2D.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.cpp",
-              "RelativeToolTip": "RenderTarget2D.cpp",
-              "ViewState": "AgIAACwAAAAAAAAAAAAWwD0AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-30T09:04:14.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "SmartDraw.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SmartDraw.h",
               "RelativeDocumentMoniker": "SmartDraw.h",
@@ -843,12 +987,11 @@
               "RelativeToolTip": "SmartDraw.h",
               "ViewState": "AgIAACIAAAAAAAAAAAAswDcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T13:01:59.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T13:01:59.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "GPMap2D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPMap2D.cpp",
               "RelativeDocumentMoniker": "GPMap2D.cpp",
@@ -856,12 +999,11 @@
               "RelativeToolTip": "GPMap2D.cpp",
               "ViewState": "AgIAAMkAAAAAAAAAAAAtwBABAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T12:30:02.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T12:30:02.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "RenderTarget2D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderTarget2D.h",
               "RelativeDocumentMoniker": "RenderTarget2D.h",
@@ -869,12 +1011,11 @@
               "RelativeToolTip": "RenderTarget2D.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-30T09:02:30.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T09:02:30.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "GPSmartDraw.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPSmartDraw.h",
               "RelativeDocumentMoniker": "GPSmartDraw.h",
@@ -882,12 +1023,11 @@
               "RelativeToolTip": "GPSmartDraw.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T13:56:31.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T13:56:31.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "GPSmartDraw.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPSmartDraw.cpp",
               "RelativeDocumentMoniker": "GPSmartDraw.cpp",
@@ -895,12 +1035,11 @@
               "RelativeToolTip": "GPSmartDraw.cpp",
               "ViewState": "AgIAANMAAAAAAAAAAAAmwPUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T13:02:20.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T13:02:20.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.35112\\include\\vector",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.35112\\include\\vector",
@@ -908,38 +1047,11 @@
               "RelativeToolTip": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.35112\\include\\vector",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-29T12:16:24.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T12:16:24.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Texture2D.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.cpp",
-              "RelativeDocumentMoniker": "Texture2D.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.cpp",
-              "RelativeToolTip": "Texture2D.cpp",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAWwK0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-01T10:03:50.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Test3D.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\Test3D.h",
-              "RelativeDocumentMoniker": "..\\OpenSpace\\Test3D.h",
-              "ToolTip": "C:\\project\\FCEp1\\OpenSpace\\Test3D.h",
-              "RelativeToolTip": "..\\OpenSpace\\Test3D.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T11:43:12.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "MaterialDepthS3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialDepthS3D.cpp",
               "RelativeDocumentMoniker": "MaterialDepthS3D.cpp",
@@ -951,7 +1063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "MaterialDepth3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialDepth3D.cpp",
               "RelativeDocumentMoniker": "MaterialDepth3D.cpp",
@@ -963,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "MaterialBasic3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialBasic3D.cpp",
               "RelativeDocumentMoniker": "MaterialBasic3D.cpp",
@@ -975,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "PostProcessing.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\PostProcessing.h",
               "RelativeDocumentMoniker": "PostProcessing.h",
@@ -983,12 +1095,11 @@
               "RelativeToolTip": "PostProcessing.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T13:11:56.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T13:11:56.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "MaterialPBRS3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialPBRS3D.h",
               "RelativeDocumentMoniker": "MaterialPBRS3D.h",
@@ -1000,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "MaterialPBR3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialPBR3D.cpp",
               "RelativeDocumentMoniker": "MaterialPBR3D.cpp",
@@ -1012,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "EngineProducer.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\EngineProducer.h",
               "RelativeDocumentMoniker": "EngineProducer.h",
@@ -1024,7 +1135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "EngineProducer.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\EngineProducer.cpp",
               "RelativeDocumentMoniker": "EngineProducer.cpp",
@@ -1036,7 +1147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "MathsOps.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MathsOps.cpp",
               "RelativeDocumentMoniker": "MathsOps.cpp",
@@ -1048,7 +1159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "Importer.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Importer.cpp",
               "RelativeDocumentMoniker": "Importer.cpp",
@@ -1056,12 +1167,11 @@
               "RelativeToolTip": "Importer.cpp",
               "ViewState": "AgIAADsBAAAAAAAAAAAswFgBAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T11:46:24.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T11:46:24.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "MaterialPBRS3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialPBRS3D.cpp",
               "RelativeDocumentMoniker": "MaterialPBRS3D.cpp",
@@ -1073,7 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "MaterialPBR3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialPBR3D.h",
               "RelativeDocumentMoniker": "MaterialPBR3D.h",
@@ -1085,7 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "MaterialDepthS3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialDepthS3D.h",
               "RelativeDocumentMoniker": "MaterialDepthS3D.h",
@@ -1097,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "MaterialDepth3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialDepth3D.h",
               "RelativeDocumentMoniker": "MaterialDepth3D.h",
@@ -1109,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 50,
               "Title": "MaterialBasic3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MaterialBasic3D.h",
               "RelativeDocumentMoniker": "MaterialBasic3D.h",
@@ -1121,7 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "RenderMaterial.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderMaterial.h",
               "RelativeDocumentMoniker": "RenderMaterial.h",
@@ -1133,7 +1243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 52,
               "Title": "FutureApp.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\FutureApp.h",
               "RelativeDocumentMoniker": "FutureApp.h",
@@ -1145,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "GPSDepth.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPSDepth.cpp",
               "RelativeDocumentMoniker": "GPSDepth.cpp",
@@ -1157,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 55,
               "Title": "GPSDepth.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPSDepth.h",
               "RelativeDocumentMoniker": "GPSDepth.h",
@@ -1169,7 +1279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "SolarisRenderer.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.h",
               "RelativeDocumentMoniker": "SolarisRenderer.h",
@@ -1181,19 +1291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "SolarisRenderer.cpp",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.cpp",
-              "RelativeDocumentMoniker": "SolarisRenderer.cpp",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\SolarisRenderer.cpp",
-              "RelativeToolTip": "SolarisRenderer.cpp",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAASwIsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T11:42:31.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 56,
               "Title": "RenderMaterial.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderMaterial.cpp",
               "RelativeDocumentMoniker": "RenderMaterial.cpp",
@@ -1205,19 +1303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Texture2D.h",
-              "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.h",
-              "RelativeDocumentMoniker": "Texture2D.h",
-              "ToolTip": "C:\\project\\FCEp1\\FutureEngine\\Texture2D.h",
-              "RelativeToolTip": "Texture2D.h",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-01T09:46:18.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "GPS3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPS3D.cpp",
               "RelativeDocumentMoniker": "GPS3D.cpp",
@@ -1229,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "GPS3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPS3D.h",
               "RelativeDocumentMoniker": "GPS3D.h",
@@ -1241,7 +1327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "CubeRenderer.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\CubeRenderer.cpp",
               "RelativeDocumentMoniker": "CubeRenderer.cpp",
@@ -1253,7 +1339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 61,
               "Title": "GPBasic3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPBasic3D.h",
               "RelativeDocumentMoniker": "GPBasic3D.h",
@@ -1265,7 +1351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "GPDepth.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPDepth.cpp",
               "RelativeDocumentMoniker": "GPDepth.cpp",
@@ -1277,7 +1363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 62,
               "Title": "GPDepth.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPDepth.h",
               "RelativeDocumentMoniker": "GPDepth.h",
@@ -1289,7 +1375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "Importer.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Importer.h",
               "RelativeDocumentMoniker": "Importer.h",
@@ -1301,7 +1387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "Starfield.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\Starfield.cpp",
               "RelativeDocumentMoniker": "..\\OpenSpace\\Starfield.cpp",
@@ -1313,7 +1399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 63,
               "Title": "Mesh3DBuffer.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Mesh3DBuffer.h",
               "RelativeDocumentMoniker": "Mesh3DBuffer.h",
@@ -1325,7 +1411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "GP3D.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GP3D.h",
               "RelativeDocumentMoniker": "GP3D.h",
@@ -1337,19 +1423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "RefCntAutoPtr.hpp",
-              "DocumentMoniker": "C:\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "ToolTip": "C:\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "RelativeToolTip": "..\\..\\..\\git\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAgwNAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T14:41:22.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 67,
               "Title": "GPBasic3D.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPBasic3D.cpp",
               "RelativeDocumentMoniker": "GPBasic3D.cpp",
@@ -1361,7 +1435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 70,
               "Title": "ParticleSystem.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\ParticleSystem.h",
               "RelativeDocumentMoniker": "ParticleSystem.h",
@@ -1373,7 +1447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "ParticleSystem.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\ParticleSystem.cpp",
               "RelativeDocumentMoniker": "ParticleSystem.cpp",
@@ -1385,7 +1459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "Mesh3DBuffer.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Mesh3DBuffer.cpp",
               "RelativeDocumentMoniker": "Mesh3DBuffer.cpp",
@@ -1397,7 +1471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 71,
               "Title": "GPParticle.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPParticle.cpp",
               "RelativeDocumentMoniker": "GPParticle.cpp",
@@ -1409,7 +1483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 73,
               "Title": "GraphNode.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GraphNode.cpp",
               "RelativeDocumentMoniker": "GraphNode.cpp",
@@ -1421,7 +1495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 74,
               "Title": "GraphNode.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GraphNode.h",
               "RelativeDocumentMoniker": "GraphNode.h",
@@ -1433,7 +1507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 72,
               "Title": "Win32Debug.cpp",
               "DocumentMoniker": "C:\\git\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\git\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp",
@@ -1445,7 +1519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 75,
               "Title": "GPParticle.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\GPParticle.h",
               "RelativeDocumentMoniker": "GPParticle.h",
@@ -1457,7 +1531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 78,
               "Title": "NodeSkeletalEntity.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeSkeletalEntity.cpp",
               "RelativeDocumentMoniker": "NodeSkeletalEntity.cpp",
@@ -1469,7 +1543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 76,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\pch.h",
               "RelativeDocumentMoniker": "pch.h",
@@ -1481,7 +1555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 77,
               "Title": "MathsOps.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MathsOps.h",
               "RelativeDocumentMoniker": "MathsOps.h",
@@ -1493,7 +1567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 79,
               "Title": "NodeSkeletalEntity.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeSkeletalEntity.h",
               "RelativeDocumentMoniker": "NodeSkeletalEntity.h",
@@ -1505,7 +1579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 80,
               "Title": "render3D.vsh",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\engine\\deShader\\render3D.vsh",
               "RelativeDocumentMoniker": "..\\OpenSpace\\engine\\deShader\\render3D.vsh",
@@ -1517,7 +1591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 82,
               "Title": "NodeEntity.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeEntity.h",
               "RelativeDocumentMoniker": "NodeEntity.h",
@@ -1529,7 +1603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 84,
               "Title": "Animation.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Animation.cpp",
               "RelativeDocumentMoniker": "Animation.cpp",
@@ -1541,7 +1615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 81,
               "Title": "renderDepth.vsh",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\engine\\deShader\\renderDepth.vsh",
               "RelativeDocumentMoniker": "..\\OpenSpace\\engine\\deShader\\renderDepth.vsh",
@@ -1553,7 +1627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 85,
               "Title": "Bone.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Bone.cpp",
               "RelativeDocumentMoniker": "Bone.cpp",
@@ -1565,7 +1639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 83,
               "Title": "Animation.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\Animation.h",
               "RelativeDocumentMoniker": "Animation.h",
@@ -1577,7 +1651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 88,
               "Title": "RenderTargetCube.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderTargetCube.h",
               "RelativeDocumentMoniker": "RenderTargetCube.h",
@@ -1589,7 +1663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 89,
               "Title": "NodeFPSCamera.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeFPSCamera.h",
               "RelativeDocumentMoniker": "NodeFPSCamera.h",
@@ -1601,7 +1675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 86,
               "Title": "OpenSpaceGame.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\OpenSpaceGame.cpp",
               "RelativeDocumentMoniker": "..\\OpenSpace\\OpenSpaceGame.cpp",
@@ -1613,7 +1687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 91,
               "Title": "NodeLight.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeLight.h",
               "RelativeDocumentMoniker": "NodeLight.h",
@@ -1625,7 +1699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 87,
               "Title": "RenderTargetCube.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\RenderTargetCube.cpp",
               "RelativeDocumentMoniker": "RenderTargetCube.cpp",
@@ -1637,7 +1711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 90,
               "Title": "NodeLight.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeLight.cpp",
               "RelativeDocumentMoniker": "NodeLight.cpp",
@@ -1649,7 +1723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 93,
               "Title": "NodeCamera.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeCamera.cpp",
               "RelativeDocumentMoniker": "NodeCamera.cpp",
@@ -1661,7 +1735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 92,
               "Title": "CubeRenderer.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\CubeRenderer.h",
               "RelativeDocumentMoniker": "CubeRenderer.h",
@@ -1673,7 +1747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 95,
               "Title": "SceneGraph.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SceneGraph.cpp",
               "RelativeDocumentMoniker": "SceneGraph.cpp",
@@ -1685,7 +1759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 94,
               "Title": "transform.hpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\packages\\glm.1.0.1\\build\\native\\include\\glm\\gtx\\transform.hpp",
               "RelativeDocumentMoniker": "packages\\glm.1.0.1\\build\\native\\include\\glm\\gtx\\transform.hpp",
@@ -1697,7 +1771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 96,
               "Title": "NodeFPSCamera.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeFPSCamera.cpp",
               "RelativeDocumentMoniker": "NodeFPSCamera.cpp",
@@ -1709,7 +1783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 97,
               "Title": "SceneGraph.h",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\SceneGraph.h",
               "RelativeDocumentMoniker": "SceneGraph.h",
@@ -1721,7 +1795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 98,
               "Title": "render3D.psh",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\engine\\deShader\\render3D.psh",
               "RelativeDocumentMoniker": "..\\OpenSpace\\engine\\deShader\\render3D.psh",
@@ -1733,7 +1807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 99,
               "Title": "MenuState.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\MenuState.cpp",
               "RelativeDocumentMoniker": "..\\OpenSpace\\MenuState.cpp",
@@ -1745,7 +1819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 102,
               "Title": "renderBasic.psh",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\engine\\deShader\\renderBasic.psh",
               "RelativeDocumentMoniker": "..\\OpenSpace\\engine\\deShader\\renderBasic.psh",
@@ -1757,7 +1831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 101,
               "Title": "renderBasic.vsh",
               "DocumentMoniker": "C:\\project\\FCEp1\\OpenSpace\\engine\\deShader\\renderBasic.vsh",
               "RelativeDocumentMoniker": "..\\OpenSpace\\engine\\deShader\\renderBasic.vsh",
@@ -1769,7 +1843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 100,
               "Title": "write.cpp",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Source\\10.0.26100.0\\ucrt\\lowio\\write.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Source\\10.0.26100.0\\ucrt\\lowio\\write.cpp",
@@ -1781,7 +1855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 103,
               "Title": "DeviceContextD3D12Impl.cpp",
               "DocumentMoniker": "C:\\git\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngineD3D12\\src\\DeviceContextD3D12Impl.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\git\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngineD3D12\\src\\DeviceContextD3D12Impl.cpp",
@@ -1793,7 +1867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 105,
               "Title": "quaternion.hpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\packages\\glm.1.0.1\\build\\native\\include\\glm\\gtx\\quaternion.hpp",
               "RelativeDocumentMoniker": "packages\\glm.1.0.1\\build\\native\\include\\glm\\gtx\\quaternion.hpp",
@@ -1805,7 +1879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 104,
               "Title": "NodeEntity.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\NodeEntity.cpp",
               "RelativeDocumentMoniker": "NodeEntity.cpp",
@@ -1817,7 +1891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 106,
               "Title": "MeshBuffer.cpp",
               "DocumentMoniker": "C:\\project\\FCEp1\\FutureEngine\\MeshBuffer.cpp",
               "RelativeDocumentMoniker": "MeshBuffer.cpp",

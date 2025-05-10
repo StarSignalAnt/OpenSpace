@@ -192,6 +192,7 @@
     <ClInclude Include="GPColorLimit.h" />
     <ClInclude Include="GPCombine.h" />
     <ClInclude Include="GPDepth.h" />
+    <ClInclude Include="GPDOF.h" />
     <ClInclude Include="GPMap2D.h" />
     <ClInclude Include="GPParticle.h" />
     <ClInclude Include="GPS3D.h" />
@@ -248,6 +249,7 @@
     <ClInclude Include="PostProcess.h" />
     <ClInclude Include="PostProcessing.h" />
     <ClInclude Include="PPBloom.h" />
+    <ClInclude Include="PPDOF.h" />
     <ClInclude Include="RenderMaterial.h" />
     <ClInclude Include="RenderTarget2D.h" />
     <ClInclude Include="RenderTargetCube.h" />
@@ -292,6 +294,7 @@
     <ClCompile Include="GPColorLimit.cpp" />
     <ClCompile Include="GPCombine.cpp" />
     <ClCompile Include="GPDepth.cpp" />
+    <ClCompile Include="GPDOF.cpp" />
     <ClCompile Include="GPMap2D.cpp" />
     <ClCompile Include="GPParticle.cpp" />
     <ClCompile Include="GPS3D.cpp" />
@@ -349,6 +352,7 @@
     <ClCompile Include="PostProcess.cpp" />
     <ClCompile Include="PostProcessing.cpp" />
     <ClCompile Include="PPBloom.cpp" />
+    <ClCompile Include="PPDOF.cpp" />
     <ClCompile Include="RenderMaterial.cpp" />
     <ClCompile Include="RenderTarget2D.cpp" />
     <ClCompile Include="RenderTargetCube.cpp" />

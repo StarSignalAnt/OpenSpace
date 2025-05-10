@@ -27,6 +27,7 @@ C:\project\FCEp1\FutureEngine\GPBlur.cpp;C:\project\FCEp1\FutureEngine\FutureEng
 C:\project\FCEp1\FutureEngine\GPColorLimit.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPColorLimit.obj
 C:\project\FCEp1\FutureEngine\GPCombine.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPCombine.obj
 C:\project\FCEp1\FutureEngine\GPDepth.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPDepth.obj
+C:\project\FCEp1\FutureEngine\GPDOF.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPDOF.obj
 C:\project\FCEp1\FutureEngine\GPMap2D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPMap2D.obj
 C:\project\FCEp1\FutureEngine\GPParticle.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPParticle.obj
 C:\project\FCEp1\FutureEngine\GPS3D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\GPS3D.obj
@@ -79,6 +80,7 @@ C:\project\FCEp1\FutureEngine\pch.cpp;C:\project\FCEp1\FutureEngine\FutureEngine
 C:\project\FCEp1\FutureEngine\PostProcess.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\PostProcess.obj
 C:\project\FCEp1\FutureEngine\PostProcessing.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\PostProcessing.obj
 C:\project\FCEp1\FutureEngine\PPBloom.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\PPBloom.obj
+C:\project\FCEp1\FutureEngine\PPDOF.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\PPDOF.obj
 C:\project\FCEp1\FutureEngine\RenderMaterial.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderMaterial.obj
 C:\project\FCEp1\FutureEngine\RenderTarget2D.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderTarget2D.obj
 C:\project\FCEp1\FutureEngine\RenderTargetCube.cpp;C:\project\FCEp1\FutureEngine\FutureEngine\x64\Debug\RenderTargetCube.obj

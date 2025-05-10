@@ -26,10 +26,10 @@ void PostProcess::InitProcess() {
 
 }
 
-void PostProcess::BindTarget(int index) {
+void PostProcess::BindTarget(int index,glm::vec3 col ) {
 
 	m_Targets[index]->Bind();
-	m_Targets[index]->Clear(glm::vec3(0, 0, 0));
+	m_Targets[index]->Clear(col);
 	m_Targets[index]->ClearZ();
 
 }

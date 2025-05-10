@@ -37,8 +37,8 @@ void main(in  PSInput  PSIn,
 
    float4 Color = float4(0,0,0,0);
 
-    Color.rgb = g_Texture.Sample(g_Texture_sampler,PSIn.UV.xy).rgb;
-    Color.rgb += g_Texture2.Sample(g_Texture2_sampler,PSIn.UV.xy).rgb;
+    Color.rgb = g_Texture.Sample(g_Texture_sampler,PSIn.UV.xy).rgb * PSIn.Combine.x;
+    Color.rgb += g_Texture2.Sample(g_Texture2_sampler,PSIn.UV.xy).rgb * PSIn.Combine.y;
     Color.a=1.0;
 
     PSOut.Color = Color;

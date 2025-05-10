@@ -13,6 +13,7 @@ class ParticleSystem;
 class PostProcessing;
 class RenderTarget2D;
 class PPBloom;
+class PPDOF;
 
 class Test3D :
     public FutureState
@@ -38,6 +39,7 @@ private:
 	ParticleSystem* m_PS1;
 	PostProcessing* m_PP;
 	PPBloom* m_Bloom;
+	PPDOF* m_DOF;
 	RenderTarget2D* m_RT1;
 
 };
